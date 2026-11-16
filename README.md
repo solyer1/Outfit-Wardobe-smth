@@ -1,7 +1,16 @@
-# Party Wardrobe Manager (PWM) v1.4.0
+# Party Wardrobe Manager (PWM) v1.4.1
 **A Multi-Character RPG Outfit & Costume Manager for SillyTavern / TauriTavern**
 
 ---
+
+### 📱 What's New in v1.4.1 (Mobile UX & Layout Overhaul)
+- **Eliminated Card Text Collisions**: Added 2-line WebKit text clamping to outfit descriptions with auto card height, completely fixing text overflowing onto adjacent cards.
+- **Dynamic Card Expansion**: Tapping/selecting any outfit smoothly expands its description up to 5 lines for effortless reading on small screens, alongside a neon checkmark badge (✓).
+- **300px+ Vertical Space Savings**:
+  - Moved **AI Scan Chat** into the header bar alongside the language selector, removing a full-width 45px button row.
+  - Streamlined the target character bar into compact icons (👤, ➕).
+  - Swapped the vertical stacked footer (which previously ate ~220px) into a sleek **single horizontal action row**: icon-only ↺ Clear (38px), side-by-side 💾 Save to Sheet (50%), and ✈ Apply to Chat (50%).
+- **Full-Screen Mobile Modal**: Seamless 100vw / 100dvh edge-to-edge modal display without awkward borders on handheld devices.
 
 ### ✨ What's New in v1.4.0
 

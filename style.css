@@ -735,96 +735,321 @@
    ========================================================================== */
 @media (max-width: 768px) {
     .pwm-modal {
-        width: 98vw;
-        height: 94vh;
-        max-height: 96vh;
-        border-radius: 8px;
+        width: 100vw !important;
+        height: 100% !important;
+        max-height: 100dvh !important;
+        border-radius: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
     }
 
     .pwm-header {
-        padding: 8px 12px;
+        padding: 6px 10px !important;
+        gap: 6px !important;
+        flex-shrink: 0 !important;
+        background: #080c14 !important;
+        border-bottom: 1px solid #171f30 !important;
     }
 
     .pwm-title {
-        font-size: 1em;
+        font-size: 0.88em !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+        flex: 1 !important;
     }
 
     .pwm-header-actions {
-        width: 100%;
-        justify-content: space-between;
+        display: flex !important;
+        align-items: center !important;
+        gap: 5px !important;
+        flex-shrink: 0 !important;
+        width: auto !important;
+    }
+
+    #pwm-scan-chat-btn {
+        padding: 4px 7px !important;
+        font-size: 0.72em !important;
+        border-radius: 6px !important;
+        white-space: nowrap !important;
+    }
+
+    #pwm-lang-select {
+        padding: 3px 6px !important;
+        font-size: 0.72em !important;
+        height: 26px !important;
+    }
+
+    .pwm-close-btn {
+        font-size: 1.2em !important;
+        padding: 2px 4px !important;
     }
 
     .pwm-source-bar {
-        padding: 6px 12px;
+        padding: 5px 8px !important;
+        gap: 5px !important;
+        overflow-x: auto !important;
+        flex-wrap: nowrap !important;
+        scrollbar-width: none !important;
+        -webkit-overflow-scrolling: touch !important;
+        flex-shrink: 0 !important;
+    }
+
+    .pwm-source-bar::-webkit-scrollbar {
+        display: none !important;
     }
 
     .pwm-source-btn {
-        padding: 5px 8px;
-        font-size: 0.78em;
+        padding: 4px 8px !important;
+        font-size: 0.74em !important;
+        white-space: nowrap !important;
+        flex-shrink: 0 !important;
     }
 
     .pwm-book-shelf-bar {
-        padding: 6px 12px;
+        padding: 6px 10px !important;
+        gap: 6px !important;
+        flex-direction: column !important;
+        flex-shrink: 0 !important;
     }
 
     .pwm-book-select-group {
-        width: 100%;
-        min-width: 0;
+        width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+    }
+
+    .pwm-book-select-group label {
+        font-size: 0.76em !important;
+        white-space: nowrap !important;
     }
 
     .pwm-book-btn-group {
-        width: 100%;
-        gap: 4px;
+        width: 100% !important;
+        display: flex !important;
+        gap: 4px !important;
     }
 
     .pwm-book-btn-group .pwm-btn {
-        flex: 1;
-        font-size: 0.75em;
-        padding: 6px 2px;
-        text-align: center;
-        justify-content: center;
+        flex: 1 !important;
+        font-size: 0.72em !important;
+        padding: 5px 2px !important;
+        text-align: center !important;
+        justify-content: center !important;
+        white-space: nowrap !important;
     }
 
     .pwm-target-bar {
-        padding: 8px 12px;
+        padding: 5px 10px !important;
+        gap: 5px !important;
+        flex-direction: column !important;
+        flex-shrink: 0 !important;
     }
 
     .pwm-char-select-wrap {
-        width: 100%;
-        min-width: 0;
+        width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+    }
+
+    .pwm-char-select-wrap label {
+        font-size: 0.76em !important;
+        white-space: nowrap !important;
     }
 
     .pwm-search-box {
-        width: 100%;
+        width: 100% !important;
+    }
+
+    .pwm-search-box input {
+        font-size: 0.8em !important;
+        padding: 5px 10px 5px 28px !important;
+        height: 30px !important;
+    }
+
+    .pwm-tabs {
+        padding: 5px 8px !important;
+        gap: 4px !important;
+        scrollbar-width: none !important;
+        flex-shrink: 0 !important;
+    }
+
+    .pwm-tabs::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .pwm-tab,
+    .pwm-tab-btn {
+        padding: 4px 10px !important;
+        font-size: 0.75em !important;
+        border-radius: 12px !important;
+        flex-shrink: 0 !important;
     }
 
     .pwm-content {
-        grid-template-columns: 1fr; /* Single column on mobile for effortless tapping */
-        padding: 10px 12px;
-        gap: 8px;
+        grid-template-columns: 1fr !important;
+        padding: 8px 10px !important;
+        gap: 8px !important;
+        flex: 1 !important;
+        min-height: 0 !important;
+        overflow-y: auto !important;
+        background: #05070c !important;
     }
 
     .pwm-item-card {
-        padding: 10px 12px;
-        min-height: 55px;
+        padding: 10px 12px !important;
+        min-height: unset !important;
+        height: auto !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+        border-radius: 8px !important;
+        border: 1px solid #172033 !important;
+        background: #0b101a !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 4px !important;
+    }
+
+    .pwm-item-card.pwm-selected {
+        border-color: #f472b6 !important;
+        background: rgba(236, 72, 153, 0.12) !important;
+        box-shadow: 0 0 10px rgba(236, 72, 153, 0.25) !important;
+    }
+
+    .pwm-item-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        gap: 8px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .pwm-item-title {
+        font-weight: 600 !important;
+        font-size: 0.88em !important;
+        color: #f1f5f9 !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+        flex: 1 !important;
+    }
+
+    .pwm-item-card.pwm-selected .pwm-item-title {
+        color: #f472b6 !important;
+    }
+
+    .pwm-check-icon {
+        color: #f472b6 !important;
+        font-size: 0.9em !important;
+        flex-shrink: 0 !important;
+    }
+
+    .pwm-item-badge {
+        font-size: 0.68em !important;
+        padding: 2px 6px !important;
+        border-radius: 4px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .pwm-item-subname {
+        font-size: 0.74em !important;
+        color: #64748b !important;
+        line-height: 1.2 !important;
+        margin: 0 !important;
+    }
+
+    .pwm-item-desc {
+        font-size: 0.78em !important;
+        color: #94a3b8 !important;
+        line-height: 1.35 !important;
+        margin-top: 2px !important;
+        display: -webkit-box !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-line-clamp: 2 !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        word-break: break-word !important;
+    }
+
+    .pwm-item-card.pwm-selected .pwm-item-desc {
+        -webkit-line-clamp: 5 !important;
+        color: #e2e8f0 !important;
     }
 
     .pwm-footer {
-        padding: 8px 12px;
+        padding: 6px 10px !important;
+        gap: 5px !important;
+        background: #07090e !important;
+        border-top: 1px solid #171f30 !important;
+        flex-shrink: 0 !important;
     }
 
-    .pwm-action-buttons {
-        flex-direction: column;
-        gap: 6px;
-    }
-
-    .pwm-btn {
-        width: 100%;
-        padding: 10px;
-        font-size: 0.9em;
+    .pwm-preview-bar {
+        font-size: 0.78em !important;
+        padding: 4px 8px !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
     }
 
     .pwm-party-summary {
-        display: none; /* Hide mini-bar on tiny screens to maximize item viewing area */
+        display: none !important; /* Hide deep prompt bar on mobile to maximize card view */
+    }
+
+    .pwm-action-buttons {
+        flex-direction: row !important;
+        gap: 6px !important;
+        align-items: center !important;
+    }
+
+    #pwm-clear-btn {
+        flex: 0 0 38px !important;
+        width: 38px !important;
+        padding: 8px 0 !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    #pwm-clear-btn .pwm-btn-text {
+        display: none !important;
+    }
+
+    #pwm-save-party-btn {
+        flex: 1 1 50% !important;
+        padding: 8px 6px !important;
+        font-size: 0.78em !important;
+        justify-content: center !important;
+        white-space: nowrap !important;
+    }
+
+    #pwm-apply-chat-btn {
+        flex: 1 1 50% !important;
+        padding: 8px 6px !important;
+        font-size: 0.78em !important;
+        justify-content: center !important;
+        white-space: nowrap !important;
+    }
+
+    .pwm-submodal {
+        padding: 8px !important;
+    }
+
+    .pwm-submodal-content {
+        max-width: 100% !important;
+        max-height: 92vh !important;
+        border-radius: 8px !important;
+    }
+
+    .pwm-st-books-list {
+        padding: 8px 10px !important;
+    }
+
+    .pwm-st-book-row {
+        padding: 8px 10px !important;
     }
 }

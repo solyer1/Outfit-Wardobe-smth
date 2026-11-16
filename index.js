@@ -1,5 +1,5 @@
 /**
- * Party Wardrobe Manager (PWM) v1.4.0 for SillyTavern / TauriTavern
+ * Party Wardrobe Manager (PWM) v1.4.1 for SillyTavern / TauriTavern
  * Multi-Character RPG Outfit & Attire Manager
  * Features:
  * - Default Language English ('en') with Persistent User Preferences
@@ -1650,8 +1650,11 @@ const UI_STRINGS = {
         reimportBtn: 'Re-sync Shelf',
         customAddedBook: 'RP Captured / Custom',
         applyChat: 'Apply to Chat Input',
+        applyChatShort: 'Apply to Chat',
         saveParty: 'Save to Character Attire Sheet',
+        savePartyShort: 'Save to Sheet',
         clearChar: 'Clear Attire',
+        clearCharShort: 'Clear',
         noOutfit: 'No outfit selected',
         partySummary: 'Party Attire Sheet (Persistent Prompt Depth 2):',
         close: 'Close',
@@ -1694,8 +1697,11 @@ const UI_STRINGS = {
         reimportBtn: 'ซิงค์ข้อมูลใหม่',
         customAddedBook: 'ชุดที่ AI สแกน / แต่งเอง',
         applyChat: 'ใส่ในช่องพิมพ์แชท',
+        applyChatShort: 'ใส่ในแชท',
         saveParty: 'บันทึกเป็นชุดประจำตัวละคร',
+        savePartyShort: 'บันทึกชุด',
         clearChar: 'ล้างชุดออก',
+        clearCharShort: 'ล้างชุด',
         noOutfit: 'ยังไม่ได้เลือกชุด',
         partySummary: 'ตารางบันทึกชุดปาร์ตี้ (ฉีดเข้า Prompt อัตโนมัติที่ Depth 2):',
         close: 'ปิด',
@@ -2188,9 +2194,12 @@ function renderModal() {
             <div class="pwm-header">
                 <div class="pwm-title">
                     <i class="fa-solid fa-shirt"></i>
-                    <span>${t('title')}</span>
+                    <span class="pwm-title-text">${t('title')}</span>
                 </div>
                 <div class="pwm-header-actions">
+                    <button type="button" class="pwm-btn pwm-btn-ai pwm-btn-xs" id="pwm-scan-chat-btn" title="Scan chat with AI to detect clothing">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> <span class="pwm-btn-text">${t('aiScan')}</span>
+                    </button>
                     <select id="pwm-lang-select" class="pwm-lang-switch">
                         <option value="en" ${state.currentLang === 'en' ? 'selected' : ''}>🇬🇧 EN</option>
                         <option value="th" ${state.currentLang === 'th' ? 'selected' : ''}>🇹🇭 ไทย</option>
@@ -2212,10 +2221,6 @@ function renderModal() {
                         ${t('sourceAll')}
                     </button>
                 </div>
-
-                <button type="button" class="pwm-btn pwm-btn-ai" id="pwm-scan-chat-btn" title="Scan chat with AI to detect clothing">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i> ${t('aiScan')}
-                </button>
             </div>
 
             <!-- Lorebook Shelf Bar (Dedicated split shelf management) -->
@@ -2245,11 +2250,11 @@ function renderModal() {
             <!-- Target Character & Search Bar -->
             <div class="pwm-target-bar">
                 <div class="pwm-char-select-wrap">
-                    <label for="pwm-char-select"><b>${t('targetChar')}</b></label>
-                    <select id="pwm-char-select" class="pwm-select">
+                    <label for="pwm-char-select"><i class="fa-solid fa-user"></i></label>
+                    <select id="pwm-char-select" class="pwm-select" title="${t('targetChar')}">
                         ${state.characters.map(c => `<option value="${escapeHtml(c)}" ${state.activeCharacter === c ? 'selected' : ''}>${escapeHtml(c)}</option>`).join('')}
                     </select>
-                    <button type="button" class="pwm-btn pwm-btn-sm" id="pwm-add-char-btn">${t('addChar')}</button>
+                    <button type="button" class="pwm-btn pwm-btn-sm" id="pwm-add-char-btn" title="${t('addChar')}"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <div class="pwm-search-box">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -2274,14 +2279,14 @@ function renderModal() {
                 <div class="pwm-preview-row" id="pwm-preview-row"></div>
                 <div class="pwm-party-summary" id="pwm-party-summary-row"></div>
                 <div class="pwm-action-buttons">
-                    <button type="button" class="pwm-btn pwm-btn-secondary" id="pwm-clear-btn">
-                        <i class="fa-solid fa-rotate-left"></i> ${t('clearChar')}
+                    <button type="button" class="pwm-btn pwm-btn-secondary" id="pwm-clear-btn" title="${t('clearChar')}">
+                        <i class="fa-solid fa-rotate-left"></i> <span class="pwm-btn-text">${t('clearCharShort')}</span>
                     </button>
-                    <button type="button" class="pwm-btn pwm-btn-save" id="pwm-save-party-btn">
-                        <i class="fa-solid fa-floppy-disk"></i> ${t('saveParty')}
+                    <button type="button" class="pwm-btn pwm-btn-save" id="pwm-save-party-btn" title="${t('saveParty')}">
+                        <i class="fa-solid fa-floppy-disk"></i> <span class="pwm-btn-text">${t('savePartyShort')}</span>
                     </button>
-                    <button type="button" class="pwm-btn pwm-btn-primary" id="pwm-apply-chat-btn">
-                        <i class="fa-solid fa-paper-plane"></i> ${t('applyChat')}
+                    <button type="button" class="pwm-btn pwm-btn-primary" id="pwm-apply-chat-btn" title="${t('applyChat')}">
+                        <i class="fa-solid fa-paper-plane"></i> <span class="pwm-btn-text">${t('applyChatShort')}</span>
                     </button>
                 </div>
             </div>
@@ -2555,7 +2560,10 @@ function renderItemsGrid() {
         return `
             <div class="pwm-item-card ${isSelected ? 'pwm-selected' : ''}" data-id="${escapeHtml(item.id)}">
                 <div class="pwm-item-header">
-                    <span class="pwm-item-title">${escapeHtml(displayName)}</span>
+                    <span class="pwm-item-title">
+                        ${isSelected ? '<i class="fa-solid fa-circle-check pwm-check-icon"></i>' : ''}
+                        <span>${escapeHtml(displayName)}</span>
+                    </span>
                     <span class="pwm-item-badge ${badgeClass}">${escapeHtml(badgeLabel)}</span>
                 </div>
                 ${subName ? `<div class="pwm-item-subname">${escapeHtml(subName)}</div>` : ''}
@@ -2856,7 +2864,7 @@ export function init() {
     if (!state.initialized) {
         state.initialized = true;
         loadState();
-        console.log('[Party Wardrobe Manager] v1.4.0 initialized (Default EN + Saved Preferences + Split Shelves + ST World Info + Full Thai Descs).');
+        console.log('[Party Wardrobe Manager] v1.4.1 initialized (Default EN + Saved Preferences + Split Shelves + ST World Info + Full Thai Descs).');
 
         const ctx = getSillyContext();
         if (ctx?.eventSource && ctx.event_types) {
