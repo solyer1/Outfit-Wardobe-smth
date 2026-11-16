@@ -1,0 +1,14 @@
+{
+    "display_name": "Party Wardrobe Manager",
+    "loading_order": 95,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Antigravity",
+    "version": "1.4.0",
+    "homePage": "",
+    "hooks": {
+        "activate": "init"
+    }
+}
