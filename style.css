@@ -888,21 +888,23 @@
         flex-shrink: 0 !important;
     }
 
+    /* Outfits Container on Mobile: Vertical flex stack instead of grid to prevent track-collapse bugs */
     .pwm-content {
-        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
         padding: 8px 10px !important;
         gap: 8px !important;
-        flex: 1 !important;
+        flex: 1 1 0 !important;
         min-height: 0 !important;
         overflow-y: auto !important;
         background: #05070c !important;
     }
 
+    /* Outfit Card on Mobile: Generous height, crisp text, zero squashing */
     .pwm-item-card {
         padding: 10px 12px !important;
-        min-height: unset !important;
+        min-height: 64px !important;
         height: auto !important;
-        overflow: hidden !important;
         box-sizing: border-box !important;
         border-radius: 8px !important;
         border: 1px solid #172033 !important;
@@ -910,11 +912,18 @@
         display: flex !important;
         flex-direction: column !important;
         gap: 4px !important;
+        flex-shrink: 0 !important;
+        cursor: pointer !important;
+    }
+
+    .pwm-item-card:hover {
+        background: #111726 !important;
+        border-color: #3b82f6 !important;
     }
 
     .pwm-item-card.pwm-selected {
         border-color: #f472b6 !important;
-        background: rgba(236, 72, 153, 0.12) !important;
+        background: rgba(236, 72, 153, 0.14) !important;
         box-shadow: 0 0 10px rgba(236, 72, 153, 0.25) !important;
     }
 
@@ -923,20 +932,26 @@
         justify-content: space-between !important;
         align-items: center !important;
         gap: 8px !important;
+        width: 100% !important;
         margin-bottom: 0 !important;
     }
 
     .pwm-item-title {
         font-weight: 600 !important;
-        font-size: 0.88em !important;
+        font-size: 0.9em !important;
         color: #f1f5f9 !important;
         display: flex !important;
         align-items: center !important;
         gap: 6px !important;
+        flex: 1 !important;
+        min-width: 0 !important;
+        line-height: 1.3 !important;
+    }
+
+    .pwm-item-title span {
         overflow: hidden !important;
         text-overflow: ellipsis !important;
         white-space: nowrap !important;
-        flex: 1 !important;
     }
 
     .pwm-item-card.pwm-selected .pwm-item-title {
@@ -959,14 +974,18 @@
     .pwm-item-subname {
         font-size: 0.74em !important;
         color: #64748b !important;
+        font-style: italic !important;
         line-height: 1.2 !important;
         margin: 0 !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
     }
 
     .pwm-item-desc {
         font-size: 0.78em !important;
         color: #94a3b8 !important;
-        line-height: 1.35 !important;
+        line-height: 1.38 !important;
         margin-top: 2px !important;
         display: -webkit-box !important;
         -webkit-box-orient: vertical !important;
@@ -977,7 +996,7 @@
     }
 
     .pwm-item-card.pwm-selected .pwm-item-desc {
-        -webkit-line-clamp: 5 !important;
+        -webkit-line-clamp: 6 !important;
         color: #e2e8f0 !important;
     }
 
@@ -1002,15 +1021,21 @@
     }
 
     .pwm-action-buttons {
+        display: flex !important;
         flex-direction: row !important;
+        flex-wrap: nowrap !important;
         gap: 6px !important;
         align-items: center !important;
+        width: 100% !important;
     }
 
     #pwm-clear-btn {
         flex: 0 0 38px !important;
         width: 38px !important;
-        padding: 8px 0 !important;
+        height: 38px !important;
+        padding: 0 !important;
+        display: inline-flex !important;
+        align-items: center !important;
         justify-content: center !important;
         text-align: center !important;
     }
@@ -1020,19 +1045,31 @@
     }
 
     #pwm-save-party-btn {
-        flex: 1 1 50% !important;
-        padding: 8px 6px !important;
+        flex: 1 1 0 !important;
+        min-width: 0 !important;
+        height: 38px !important;
+        padding: 0 8px !important;
         font-size: 0.78em !important;
+        display: inline-flex !important;
+        align-items: center !important;
         justify-content: center !important;
         white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
     }
 
     #pwm-apply-chat-btn {
-        flex: 1 1 50% !important;
-        padding: 8px 6px !important;
+        flex: 1 1 0 !important;
+        min-width: 0 !important;
+        height: 38px !important;
+        padding: 0 8px !important;
         font-size: 0.78em !important;
+        display: inline-flex !important;
+        align-items: center !important;
         justify-content: center !important;
         white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
     }
 
     .pwm-submodal {
