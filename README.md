@@ -1,7 +1,21 @@
-# Party Wardrobe Manager (PWM) v1.4.2
+# Party Wardrobe Manager (PWM) v1.5.0
 **A Multi-Character RPG Outfit & Costume Manager for SillyTavern / TauriTavern**
 
 ---
+
+### 🌟 What's New in v1.5.0 (224 Default Presets Expanded Catalog)
+- **Doubled the Default Wardrobe**: Added **112 brand-new default presets**, expanding the built-in library from 112 to **224 comprehensive presets** across all 9 categories:
+  - **Specialty Sets**: Expanded from 25 to **50 items** (Vampire Countess, Cyber Kunoichi, Gothic Lolita, Pharaoh Empress, Race Queen, Dragon Knight Bikini, Kitsune Dancer, etc.).
+  - **Tops**: Expanded from 15 to **30 items** (Keyhole Turtleneck, Backless Halter, Leather Biker Bra, Victorian Corset, Metallic Bandeau, etc.).
+  - **Bottoms**: Expanded from 12 to **24 items** (Tennis Skirt, Lace Bloomers, Vinyl Miniskirt, Slit Maxi Skirt, Leather Micro Skirt, etc.).
+  - **Dresses**: Expanded from 11 to **22 items** (Backless Silk Gown, Gothic Velvet Gown, Mini Qipao, Bandage Bodycon, etc.).
+  - **Fullbody Suits**: Expanded from 7 to **14 items** (Metallic Catsuit, Fishnet Bodystocking, Diving Wetsuit, SciFi Plugsuit, etc.).
+  - **Legwear**: Expanded from 6 to **12 items** (Lace Stay-Ups, Diamond Fishnets, Thigh-High Leather Stilettos, etc.).
+  - **Daywear & Misc**: Expanded from 16 to **32 items** (Boyfriend Shirt, Silk Pajamas, Plaid School Blazer, Kimono Haori, Moto Jacket, etc.).
+  - **States & Conditions**: Expanded from 7 to **14 items** (Torn Attire, Oil Sheened, Bound Ribbons, Dripping Sweat, Blindfolded, Handcuffed, etc.).
+  - **Add-ons & Modifiers**: Expanded from 13 to **26 items** (Heart Choker, Fox Tail & Ears, Cat Paws, Body Chains, Lace Garters, etc.).
+- **100% Bilingual**: Every single one of the 224 presets features full English and Thai names, detailed lore specifications, and search keywords.
+- **Synced SillyTavern Lorebook**: The standalone sensual_costumes.json world info file in your SillyTavern library is updated to all 224 presets.
 
 ### 🫧 What's New in v1.4.2 (Floating Bubble GUI & Detail Inspector)
 - **Floating Bubble Mobile Window**:
@@ -32,8 +46,8 @@
    - The UI defaults to **English (`en`)** on first launch.
    - When you switch the language to **ไทย (`th`)** or back to **English**, your preference is automatically saved in `localStorage` and remembered across browser/app restarts.
 
-2. **Full Thai Translations for All 112 Default Outfits**
-   - Both **Outfit Name** (`th_name`) and **Detailed Description** (`th_desc`) are translated into rich, elegant Thai for all 112 default costumes.
+2. **Full Thai Translations for All 224 Default Outfits**
+   - Both **Outfit Name** (`th_name`) and **Detailed Description** (`th_desc`) are translated into rich, elegant Thai for all 224 default costumes.
    - In Thai mode: shows Thai titles and Thai descriptions.
    - In English mode: shows English titles and English descriptions.
 
@@ -69,5 +83,5 @@
 ### 🚀 Usage
 1. Press `Ctrl + R` in TauriTavern / SillyTavern to reload.
 2. Click the shirt icon `👕` above the chat input box to open the Wardrobe Manager.
-3. Switch between `👑 Default Sets (112)` and `📂 Custom / Imported`.
+3. Switch between `👑 Default Sets (224)` and `📂 Custom / Imported`.
 4. Click `Pick from ST World` to import any of your existing SillyTavern lorebooks!

@@ -62,7 +62,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "school swimsuit",
       "navy school swimsuit",
-      "sukumizu"
+      "sukumizu",
+      "ชุดว่ายน้ำโรงเรียน"
     ]
   },
   {
@@ -76,7 +77,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "heart cutout suit",
       "pink latex heart suit",
-      "ชุดลาเท็กซ์หัวใจ"
+      "ชุดลาเท็กซ์หัวใจ",
+      "ชุดเปิดหัวใจ"
     ]
   },
   {
@@ -90,7 +92,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "glossy leotard",
       "high-shine leotard",
-      "เลโอตาร์ดมันเงา"
+      "เลโอตาร์ดมันเงา",
+      "ชุดรัดรูปเปิดหัวใจ"
     ]
   },
   {
@@ -104,7 +107,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "heart cutout bunny suit",
       "satin heart bunny suit",
-      "ชุดบันนี่เปิดหัวใจ"
+      "ชุดบันนี่เปิดหัวใจ",
+      "ชุดกระต่ายเปิดหัวใจ"
     ]
   },
   {
@@ -118,7 +122,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "heart latex maid",
       "latex maid dress",
-      "ชุดเมดลาเท็กซ์"
+      "ชุดเมดลาเท็กซ์",
+      "ชุดเมดเปิดอก"
     ]
   },
   {
@@ -132,7 +137,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "heart latex habit",
       "purple latex nun",
-      "ชุดแม่ชีลาเท็กซ์"
+      "ชุดแม่ชีลาเท็กซ์",
+      "ชุดซิสเตอร์ลาเท็กซ์"
     ]
   },
   {
@@ -146,7 +152,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "heart nurse dress",
       "pink latex nurse",
-      "ชุดพยาบาลลาเท็กซ์"
+      "ชุดพยาบาลลาเท็กซ์",
+      "ชุดพยาบาลแหวกอก"
     ]
   },
   {
@@ -160,7 +167,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "exposed harem miko",
       "sheer miko",
-      "ชุดมิโกะผ้าบาง"
+      "ชุดมิโกะผ้าบาง",
+      "ชุดมิโกะฮาเร็ม"
     ]
   },
   {
@@ -174,7 +182,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "gold belly dancer set",
       "coin bra belly dancer",
-      "ชุดระบำหน้าท้อง"
+      "ชุดระบำหน้าท้อง",
+      "ชุดนักเต้นสีทอง"
     ]
   },
   {
@@ -188,7 +197,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "bridal lace",
       "bridal lingerie set",
-      "ชุดเจ้าสาวลูกไม้"
+      "ชุดเจ้าสาวลูกไม้",
+      "ชุดชั้นในเจ้าสาว"
     ]
   },
   {
@@ -202,7 +212,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "violet heart catsuit",
       "purple heart catsuit",
-      "ชุดแคทสูทสีม่วง"
+      "ชุดแคทสูทสีม่วง",
+      "ชุดรัดรูปเปิดหัวใจสีม่วง"
     ]
   },
   {
@@ -216,7 +227,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "sheer heart negligee",
       "translucent negligee",
-      "ชุดนอนไม่ได้นอนผ้าบาง"
+      "ชุดนอนไม่ได้นอนผ้าบาง",
+      "ชุดนอนบางเบา"
     ]
   },
   {
@@ -230,7 +242,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "purple heart-trim swimsuit",
       "latex racing swimsuit",
-      "ชุดว่ายน้ำลาเท็กซ์ม่วง"
+      "ชุดว่ายน้ำลาเท็กซ์ม่วง",
+      "ชุดว่ายน้ำขอบหัวใจ"
     ]
   },
   {
@@ -244,7 +257,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "red and gold heart-cup leotard",
       "gold heart leotard",
-      "เลโอตาร์ดหัวใจทอง"
+      "เลโอตาร์ดหัวใจทอง",
+      "ชุดรัดรูปแดงทอง"
     ]
   },
   {
@@ -258,7 +272,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "purple officer latex uniform",
       "latex officer",
-      "ชุดผู้กองลาเท็กซ์"
+      "ชุดผู้กองลาเท็กซ์",
+      "ชุดทหารสาวลาเท็กซ์"
     ]
   },
   {
@@ -272,7 +287,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "yellow backless leotard",
       "yellow latex leotard",
-      "เลโอตาร์ดสีเหลืองเปิดหลัง"
+      "เลโอตาร์ดสีเหลืองเปิดหลัง",
+      "ชุดรัดรูปสีเหลือง"
     ]
   },
   {
@@ -286,7 +302,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "black latex bunny suit",
       "latex bunny",
-      "ชุดบันนี่ลาเท็กซ์ดำ"
+      "ชุดบันนี่ลาเท็กซ์ดำ",
+      "ชุดกระต่ายดำ"
     ]
   },
   {
@@ -300,7 +317,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "heart pasty bunny set",
       "pasty bunny",
-      "เซ็ตบันนี่พาสตี้"
+      "เซ็ตบันนี่พาสตี้",
+      "ชุดบันนี่ปิดหัวใจ"
     ]
   },
   {
@@ -328,7 +346,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "horned gold heart latex set",
       "gold heart horns",
-      "เซ็ตปีศาจหัวใจทอง"
+      "เซ็ตปีศาจหัวใจทอง",
+      "ชุดลาเท็กซ์เขาทอง"
     ]
   },
   {
@@ -342,7 +361,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "pink leopard micro bikini",
       "leopard micro bikini",
-      "ไมโครบิกินี่ลายเสือดาว"
+      "ไมโครบิกินี่ลายเสือดาว",
+      "บิกินี่จิ๋วลายเสือ"
     ]
   },
   {
@@ -356,7 +376,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "pink heart succubus suit",
       "succubus latex",
-      "ชุดซัคคิวบัสชมพู"
+      "ชุดซัคคิวบัสชมพู",
+      "ชุดปีศาจสาวลาเท็กซ์"
     ]
   },
   {
@@ -370,7 +391,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "white heart nurse apron",
       "nurse apron halter",
-      "เอี๊ยมพยาบาลหัวใจ"
+      "เอี๊ยมพยาบาลหัวใจ",
+      "ชุดพยาบาลเอี๊ยม"
     ]
   },
   {
@@ -384,7 +406,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "purple fishnet nun harness",
       "nun fishnet harness",
-      "ฮาร์เนสแม่ชีตาข่าย"
+      "ฮาร์เนสแม่ชีตาข่าย",
+      "ชุดซิสเตอร์สายรัด"
     ]
   },
   {
@@ -398,7 +421,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "sheer heart-clamp babydoll",
       "heart clamp babydoll",
-      "เบบี้ดอลล์ติดคลิปหัวใจ"
+      "เบบี้ดอลล์ติดคลิปหัวใจ",
+      "ชุดนอนบางเบาคลิปเงิน"
     ]
   },
   {
@@ -412,7 +436,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "crop top",
       "cotton crop top",
-      "เสื้อครอป"
+      "เสื้อครอป",
+      "เสื้อเอวลอย"
     ]
   },
   {
@@ -426,7 +451,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "tube top",
       "strapless tube top",
-      "เกาะอก"
+      "เกาะอก",
+      "เสื้อเกาะอก"
     ]
   },
   {
@@ -454,7 +480,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "oversized sweater",
       "off-shoulder sweater",
-      "เสื้อสเวตเตอร์ตัวใหญ่"
+      "เสื้อสเวตเตอร์ตัวใหญ่",
+      "เสื้อไหล่ตก"
     ]
   },
   {
@@ -496,7 +523,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "laced corset",
       "corset top",
-      "คอร์เซ็ท"
+      "คอร์เซ็ท",
+      "เสื้อรัดรูปผูกเชือก"
     ]
   },
   {
@@ -538,7 +566,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "tank top",
       "ribbed tank top",
-      "เสื้อกล้าม"
+      "เสื้อกล้าม",
+      "เสื้อกล้ามรัดรูป"
     ]
   },
   {
@@ -552,7 +581,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "apron, nothing under it",
       "naked apron",
-      "kitchen apron bare"
+      "kitchen apron bare",
+      "เอี๊ยมเปลือย"
     ]
   },
   {
@@ -580,7 +610,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "bikini",
       "triangle bikini",
-      "บิกินี่"
+      "บิกินี่",
+      "ชุดบิกินี่"
     ]
   },
   {
@@ -594,7 +625,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "chest sarashi",
       "sarashi wraps",
-      "ผ้าพันอก"
+      "ผ้าพันอก",
+      "ซาราชิ"
     ]
   },
   {
@@ -608,7 +640,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "bra panties",
       "matching lingerie set",
-      "ชุดชั้นใน"
+      "ชุดชั้นใน",
+      "บราและกางเกงใน"
     ]
   },
   {
@@ -664,7 +697,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "micro skirt",
       "ultra mini skirt",
-      "กระโปรงสั้นพิเศษ"
+      "กระโปรงสั้นพิเศษ",
+      "ไมโครสเกิร์ต"
     ]
   },
   {
@@ -692,7 +726,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "yoga leggings",
       "spandex leggings",
-      "กางเกงโยคะ"
+      "กางเกงโยคะ",
+      "เลกกิ้ง"
     ]
   },
   {
@@ -790,7 +825,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "slip dress",
       "satin slip dress",
-      "ชุดเดรสสายเดี่ยว"
+      "ชุดเดรสสายเดี่ยว",
+      "สลิปเดรส"
     ]
   },
   {
@@ -804,7 +840,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "sundress",
       "cotton sundress",
-      "ชุดซันเดรส"
+      "ชุดซันเดรส",
+      "เดรสฤดูร้อน"
     ]
   },
   {
@@ -818,7 +855,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "cocktail dress",
       "fitted cocktail dress",
-      "ชุดค็อกเทลเดรส"
+      "ชุดค็อกเทลเดรส",
+      "ชุดราตรีสั้น"
     ]
   },
   {
@@ -832,7 +870,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "silk cheongsam",
       "fitted qipao",
-      "กี่เพ้า"
+      "กี่เพ้า",
+      "ชุดกี่เพ้า"
     ]
   },
   {
@@ -846,7 +885,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "yukata",
       "cotton yukata",
-      "ยูกาตะ"
+      "ยูกาตะ",
+      "ชุดยูกาตะ"
     ]
   },
   {
@@ -860,7 +900,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "maid dress",
       "classic maid dress",
-      "ชุดเมด"
+      "ชุดเมด",
+      "ชุดสาวใช้"
     ]
   },
   {
@@ -874,7 +915,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "nurse dress",
       "white nurse dress",
-      "ชุดพยาบาล"
+      "ชุดพยาบาล",
+      "เดรสพยาบาล"
     ]
   },
   {
@@ -888,7 +930,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "latex minidress",
       "glossy latex dress",
-      "มินิเดรสลาเท็กซ์"
+      "มินิเดรสลาเท็กซ์",
+      "เดรสยางรัดรูป"
     ]
   },
   {
@@ -902,7 +945,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "wrap dress",
       "v-neck wrap dress",
-      "แร็ปเดรส"
+      "แร็ปเดรส",
+      "เดรสผูกเอว"
     ]
   },
   {
@@ -930,7 +974,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "baby doll negligee",
       "sheer babydoll negligee",
-      "ชุดนอนเบบี้ดอลล์"
+      "ชุดนอนเบบี้ดอลล์",
+      "เนกลิเช"
     ]
   },
   {
@@ -944,7 +989,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "leotard",
       "tight leotard",
-      "เลโอตาร์ด"
+      "เลโอตาร์ด",
+      "ชุดรัดรูป"
     ]
   },
   {
@@ -972,7 +1018,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "catsuit",
       "full catsuit",
-      "แคทสูท"
+      "แคทสูท",
+      "ชุดบอดี้สูทเต็มตัว"
     ]
   },
   {
@@ -986,7 +1033,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "plugsuit",
       "scifi plugsuit",
-      "ปลั๊กสูท"
+      "ปลั๊กสูท",
+      "ชุดนักบินไซไฟ"
     ]
   },
   {
@@ -1014,7 +1062,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "latex bodysuit",
       "rubber bodysuit",
-      "บอดี้สูทลาเท็กซ์"
+      "บอดี้สูทลาเท็กซ์",
+      "ชุดยางบอดี้สูท"
     ]
   },
   {
@@ -1028,7 +1077,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "teddy",
       "lace teddy",
-      "เท็ดดี้ลูกไม้"
+      "เท็ดดี้ลูกไม้",
+      "ชุดชั้นในเท็ดดี้"
     ]
   },
   {
@@ -1042,7 +1092,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "thigh-high stockings",
       "stay-up stockings",
-      "ถุงน่องเหนือเข่า"
+      "ถุงน่องเหนือเข่า",
+      "ถุงน่องสายรัด"
     ]
   },
   {
@@ -1070,7 +1121,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "sheer stockings",
       "pantyhose",
-      "ถุงน่องบาง"
+      "ถุงน่องบาง",
+      "ถุงน่องซีทรู"
     ]
   },
   {
@@ -1084,7 +1136,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "garter belt",
       "suspender belt",
-      "สายรัดถุงน่อง"
+      "สายรัดถุงน่อง",
+      "การ์เตอร์เบลท์"
     ]
   },
   {
@@ -1126,7 +1179,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "silk blouse",
       "unbuttoned blouse",
-      "เสื้อเบลาส์ผ้าไหม"
+      "เสื้อเบลาส์ผ้าไหม",
+      "เสื้อเชิ้ตผ้าไหม"
     ]
   },
   {
@@ -1140,7 +1194,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "camisole",
       "silk camisole",
-      "สายเดี่ยวผ้าซาติน"
+      "สายเดี่ยวผ้าซาติน",
+      "เสื้อคามิโซล"
     ]
   },
   {
@@ -1154,7 +1209,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "bandeau",
       "elastic bandeau",
-      "เกาะอกแถบแคบ"
+      "เกาะอกแถบแคบ",
+      "แถบคาดอก"
     ]
   },
   {
@@ -1168,7 +1224,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "team jersey",
       "oversized sports jersey",
-      "เสื้อกีฬาตัวใหญ่"
+      "เสื้อกีฬาตัวใหญ่",
+      "เสื้อทีม"
     ]
   },
   {
@@ -1182,7 +1239,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "gym buruma",
       "buruma shorts",
-      "กางเกงบลูม่า"
+      "กางเกงบลูม่า",
+      "บลูม่า"
     ]
   },
   {
@@ -1196,7 +1254,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "hakama",
       "pleated hakama",
-      "กางเกงฮากามะ"
+      "กางเกงฮากามะ",
+      "ฮากามะ"
     ]
   },
   {
@@ -1224,7 +1283,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "hanfu",
       "flowing hanfu",
-      "ชุดฮั่นฝู"
+      "ชุดฮั่นฝู",
+      "ชุดจีนโบราณ"
     ]
   },
   {
@@ -1238,7 +1298,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "office suit",
       "business suit skirt",
-      "ชุดสูททำงาน"
+      "ชุดสูททำงาน",
+      "ชุดสาวออฟฟิศ"
     ]
   },
   {
@@ -1252,7 +1313,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "school uniform",
       "sailor uniform",
-      "ชุดกะลาสี"
+      "ชุดกะลาสี",
+      "ชุดนักเรียนญี่ปุ่นคอสเพลย์"
     ]
   },
   {
@@ -1266,7 +1328,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "gym kit",
       "athletic gym shirt",
-      "ชุดออกกำลังกาย"
+      "ชุดออกกำลังกาย",
+      "ชุดวิ่ง"
     ]
   },
   {
@@ -1280,7 +1343,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "tracksuit",
       "zipped tracksuit",
-      "ชุดวอร์ม"
+      "ชุดวอร์ม",
+      "เสื้อวอร์มแหวกอก"
     ]
   },
   {
@@ -1308,7 +1372,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "heart pasties",
       "heart nipple pasties",
-      "พาสตี้หัวใจ"
+      "พาสตี้หัวใจ",
+      "ที่แปะจุกหัวใจ"
     ]
   },
   {
@@ -1336,7 +1401,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "robe open",
       "silk robe open",
-      "เสื้อคลุมผ้าไหมเปิดอก"
+      "เสื้อคลุมผ้าไหมเปิดอก",
+      "ชุดคลุมอาบน้ำ"
     ]
   },
   {
@@ -1350,7 +1416,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "nude",
       "completely naked",
-      "เปลือยเปล่า"
+      "เปลือยเปล่า",
+      "แก้ผ้า"
     ]
   },
   {
@@ -1378,7 +1445,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "towel only",
       "bath towel knotted",
-      "นุ่งผ้าเช็ดตัวผืนเดียว"
+      "นุ่งผ้าเช็ดตัวผืนเดียว",
+      "พันผ้าขนหนู"
     ]
   },
   {
@@ -1392,7 +1460,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "soaked clothes",
       "wet clothes clinging",
-      "เสื้อผ้าเปียกโชก"
+      "เสื้อผ้าเปียกโชก",
+      "เสื้อผ้าแนบเนื้อ"
     ]
   },
   {
@@ -1406,7 +1475,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "half dressed",
       "garment hanging open",
-      "แต่งตัวครึ่งๆ กลางๆ"
+      "แต่งตัวครึ่งๆ กลางๆ",
+      "เสื้อผ้าหลุดลุ่ย"
     ]
   },
   {
@@ -1420,7 +1490,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "just woken",
       "freshly awake",
-      "เพิ่งตื่นนอน"
+      "เพิ่งตื่นนอน",
+      "ตื่นนอน"
     ]
   },
   {
@@ -1434,7 +1505,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "fresh from the shower",
       "post-shower damp",
-      "เพิ่งอาบน้ำเสร็จ"
+      "เพิ่งอาบน้ำเสร็จ",
+      "ตัวชื้นน้ำ"
     ]
   },
   {
@@ -1448,7 +1520,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "crotchless cut",
       "open gusset",
-      "ผ่าเป้า"
+      "ผ่าเป้า",
+      "เปิดเป้า"
     ]
   },
   {
@@ -1462,7 +1535,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "open bust",
       "cupless cut",
-      "เปิดอก"
+      "เปิดอก",
+      "ผ่าอก"
     ]
   },
   {
@@ -1476,7 +1550,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "heart cutouts",
       "heart-shaped windows",
-      "เว้าหัวใจ"
+      "เว้าหัวใจ",
+      "เจาะช่องหัวใจ"
     ]
   },
   {
@@ -1490,7 +1565,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "low back",
       "back scooped low",
-      "เว้าหลังลึก"
+      "เว้าหลังลึก",
+      "เปิดหลัง"
     ]
   },
   {
@@ -1504,7 +1580,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "high slit",
       "thigh-high slit",
-      "ผ่าข้างสูง"
+      "ผ่าข้างสูง",
+      "กระโปรงผ่าสูง"
     ]
   },
   {
@@ -1518,7 +1595,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "sheer fabric",
       "translucent fabric",
-      "ผ้าซีทรู"
+      "ผ้าซีทรู",
+      "ผ้าบางใส"
     ]
   },
   {
@@ -1532,7 +1610,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "loose fit",
       "hanging loose",
-      "ทรงหลวม"
+      "ทรงหลวม",
+      "เสื้อผ้าหลวม"
     ]
   },
   {
@@ -1546,7 +1625,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "glossy sheen",
       "wet-look shine",
-      "ผิวมันเงา"
+      "ผิวมันเงา",
+      "เคลือบเงา"
     ]
   },
   {
@@ -1560,7 +1640,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "jewellery accents",
       "body chains",
-      "เครื่องประดับตามตัว"
+      "เครื่องประดับตามตัว",
+      "โซ่ประดับตัว"
     ]
   },
   {
@@ -1574,7 +1655,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "goosebumps",
       "chilled skin",
-      "ขนลุก"
+      "ขนลุก",
+      "ผิวสัมผัสหนาว"
     ]
   },
   {
@@ -1588,7 +1670,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "high heels",
       "stiletto heels",
-      "รองเท้าส้นสูง"
+      "รองเท้าส้นสูง",
+      "ส้นสูง"
     ]
   },
   {
@@ -1602,7 +1685,8 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "collar at throat",
       "choker collar",
-      "ปลอกคอ"
+      "ปลอกคอ",
+      "โชคเกอร์"
     ]
   },
   {
@@ -1616,7 +1700,1688 @@ const EMBEDDED_CATALOG = [
     "keys": [
       "barefoot",
       "bare feet",
-      "เท้าเปล่า"
+      "เท้าเปล่า",
+      "ไม่ใส่รองเท้า"
+    ]
+  },
+  {
+    "id": "Costume_Vampire_Countess",
+    "name": "Vampire Countess",
+    "th_name": "เคาน์เตสแวมไพร์กอธิค",
+    "category": "Specialty Sets",
+    "desc": "A dramatic gothic Victorian vampire countess ensemble. Features a boned deep-crimson velvet underbust corset with intricate black lace overlay, high standing batwing collar, cascading sheer black split bustle skirt worn over lace boyshorts, and ruffled choker. High-contrast gothic elegance.",
+    "th_desc": "ชุดเคาน์เตสแวมไพร์สไตล์กอธิควิกตอเรียน โดดเด่นด้วยคอร์เซ็ทผ้ากำมะหยี่สีแดงเข้มเสริมโครงกระชับทรงคลุมทับด้วยลูกไม้ดำ คอเสื้อทรงปีกค้างคาวตั้งสูง กระโปรงสุ่มผ่าข้างผ้าโปร่งทิ้งตัวสวมทับกางเกงลูกไม้ขาสั้น และโชคเกอร์คอระบายลูกไม้ ให้เสน่ห์ลึกลับหรูหรา",
+    "source": "default",
+    "keys": [
+      "Vampire Countess",
+      "Vampire Gown",
+      "เคาน์เตสแวมไพร์กอธิค",
+      "ชุดแวมไพร์"
+    ]
+  },
+  {
+    "id": "Costume_Cyber_Kunoichi",
+    "name": "Cyber Kunoichi",
+    "th_name": "นินจาสาวไซเบอร์",
+    "category": "Specialty Sets",
+    "desc": "A high-tech form-fitting mesh shinobi suit with luminous neon cyan line trim. Features an open back, high-neck collar, segmented composite shoulder pads, arm wraps, and asymmetrical leg guard ties.",
+    "th_desc": "ชุดชิโนบิสาวไซเบอร์รัดรูปแนบเนื้อตัดเย็บจากผ้าตาข่ายไฮเทค ตกแต่งด้วยเส้นไฟนีออนสีฟ้าสว่างไสว ดีไซน์เปิดแผ่นหลัง คอเสื้อทรงสูง เสริมเกราะไหล่และปลอกแขนคาร์บอนพร้อมสายรัดขาสไตล์นินจาอนาคต",
+    "source": "default",
+    "keys": [
+      "Cyber Kunoichi",
+      "Cyber Ninja",
+      "นินจาสาวไซเบอร์",
+      "นินจาไซเบอร์"
+    ]
+  },
+  {
+    "id": "Costume_Gothic_Lolita_Doll",
+    "name": "Gothic Lolita Doll",
+    "th_name": "ตุ๊กตากอธิคโลลิต้า",
+    "category": "Specialty Sets",
+    "desc": "An ornate gothic lolita porcelain doll dress. Layered ruffled black organza petticoats, boned lace bodice, bell sleeves, satin hair ribbons, and a delicate scalloped bib collar.",
+    "th_desc": "ชุดเดรสตุ๊กตากระเบื้องเคลือบกอธิคโลลิต้าแสนประณีต กระโปรงสุ่มผ้าออร์แกนซ่าสีดำซ้อนระบายเป็นชั้น คอร์เซ็ทลูกไม้กระชับเอว แขนเสื้อทรงระฆัง และที่คาดผมริบบิ้นซาตินสีดำขลับ",
+    "source": "default",
+    "keys": [
+      "Gothic Lolita Doll",
+      "Gothic Lolita",
+      "ตุ๊กตากอธิคโลลิต้า",
+      "โลลิต้ากอธิค"
+    ]
+  },
+  {
+    "id": "Costume_Succubus_Queen",
+    "name": "Succubus Queen",
+    "th_name": "ราชินีซัคคิวบัส",
+    "category": "Specialty Sets",
+    "desc": "A midnight patent leather harness set with batwing hip drapery. Features heart-cutout bust cups, silver O-ring linkages, studded choker, and sheer mesh hip veils.",
+    "th_desc": "เซ็ตชุดชั้นในหนังมันเงาสีดำขลับสไตล์ราชินีปิศาจซัคคิวบัส ตัวบราเว้าช่องรูปหัวใจเชื่อมต่อด้วยห่วงเงินโอริง ประดับผ้าคลุมสะโพกทรงปีกค้างคาวโปร่งแสงและโชคเกอร์หมุดเงิน",
+    "source": "default",
+    "keys": [
+      "Succubus Queen",
+      "Succubus Armor",
+      "ราชินีซัคคิวบัส",
+      "ชุดซัคคิวบัส"
+    ]
+  },
+  {
+    "id": "Costume_Cyberpunk_Mercenary",
+    "name": "Cyberpunk Mercenary",
+    "th_name": "ทหารรับจ้างไซเบอร์พังก์",
+    "category": "Specialty Sets",
+    "desc": "A tactical sci-fi combat set with a cropped armored bolero jacket, high-waist tactical shorts, utility thigh holsters, and glowing orange electroluminescent wire accents.",
+    "th_desc": "ชุดยุทธวิธีไซเบอร์พังก์ล้ำยุค ประกอบด้วยแจ็คเก็ตครอปทรงสั้นเสริมเกราะ กางเกงขาสั้นเอวสูง ซองใส่อุปกรณ์รัดต้นขา และสายไฟเรืองแสงสีส้มสไตล์ทหารรับจ้างไซไฟ",
+    "source": "default",
+    "keys": [
+      "Cyberpunk Mercenary",
+      "Cyberpunk Gear",
+      "ทหารรับจ้างไซเบอร์พังก์",
+      "ไซเบอร์พังก์"
+    ]
+  },
+  {
+    "id": "Costume_Micro_Cheerleader",
+    "name": "Micro Cheerleader",
+    "th_name": "เชียร์ลีดเดอร์ไมโคร",
+    "category": "Specialty Sets",
+    "desc": "An ultra-cropped sporty team halter top with vibrant contrast trim, paired with an ultra-short knife-pleated cheerleader skirt and matching wrist cuffs.",
+    "th_desc": "ชุดเชียร์ลีดเดอร์ทรงไมโครแบบสปอร์ต เสื้อคล้องคอครอปสั้นพิเศษสกรีนลายทีม จับคู่กับกระโปรงสั้นจับจีบรอบเอวต่ำและปลอกข้อมือเข้าชุดกัน ให้ลุคสดใสและกระฉับกระเฉง",
+    "source": "default",
+    "keys": [
+      "Micro Cheerleader",
+      "Cheerleader Uniform",
+      "เชียร์ลีดเดอร์ไมโคร",
+      "ชุดเชียร์ลีดเดอร์"
+    ]
+  },
+  {
+    "id": "Costume_Tainted_Saintess",
+    "name": "Tainted Saintess",
+    "th_name": "นักบุญสาวต้องมนตร์",
+    "category": "Specialty Sets",
+    "desc": "Pristine white silk holy vestments with high double thigh slits, delicate gold embroidery, an open chest window, and a cascading sheer white veil.",
+    "th_desc": "ชุดนักบุญศักดิ์สิทธิ์ผ้าไหมสีขาวบริสุทธิ์ ดีไซน์แหวกผ่าขาสูงทั้งสองข้าง ปักดิ้นทองคำลวดลายศักดิ์สิทธิ์ พร้อมช่องเปิดเว้าบริเวณหน้าอกและผ้าคลุมศีรษะโปร่งแสงทิ้งตัวยาว",
+    "source": "default",
+    "keys": [
+      "Tainted Saintess",
+      "Corrupted Nun",
+      "นักบุญสาวต้องมนตร์",
+      "ชุดนักบุญ"
+    ]
+  },
+  {
+    "id": "Costume_Dark_Magical_Girl",
+    "name": "Dark Magical Girl",
+    "th_name": "สาวน้อยเวทมนตร์ด้านมืด",
+    "category": "Specialty Sets",
+    "desc": "An asymmetrical flared sailor leotard with iridescent midnight organza capelet, heart-shaped dark crystal brooch, puff sleeves, and thigh ribbons.",
+    "th_desc": "ชุดบอดี้สูทกะลาสีสาวน้อยเวทมนตร์โทนดำเงางาม ชายกระโปรงบานสั้นซ้อนผ้าออร์แกนซ่าประกายเหลือบ ผ้าคลุมไหล่โปร่งแสง กลัดเข็มกลัดคริสตัลหัวใจสีม่วงเข้มและริบบิ้นผูกต้นขา",
+    "source": "default",
+    "keys": [
+      "Dark Magical Girl",
+      "Gothic Mahou",
+      "สาวน้อยเวทมนตร์ด้านมืด",
+      "สาวน้อยเวทมนตร์"
+    ]
+  },
+  {
+    "id": "Costume_Pharaoh_Empress",
+    "name": "Pharaoh Empress",
+    "th_name": "จักรพรรดินีฟาโรห์",
+    "category": "Specialty Sets",
+    "desc": "A sheer pleated golden linen kalasiris dress with ornate lapis lazuli collar necklace, linked golden hip chains, bare midriff, and an asp cobra circlet.",
+    "th_desc": "ชุดกาลาซิริสผ้าลินินสีทองโปร่งจับพลีตสไตล์อียิปต์โบราณ ประดับแผงคอทองคำฝังหินลาพิสลาซูลี สายโซ่ทองระย้าคาดสะโพก และรัดเกล้ารูปงูเห่าทองคำทรงอำนาจ",
+    "source": "default",
+    "keys": [
+      "Pharaoh Empress",
+      "Egyptian Queen",
+      "จักรพรรดินีฟาโรห์",
+      "ชุดฟาโรห์"
+    ]
+  },
+  {
+    "id": "Costume_Race_Queen",
+    "name": "Race Queen",
+    "th_name": "เรซควีนสาวสนามแข่ง",
+    "category": "Specialty Sets",
+    "desc": "A high-gloss zip-front spandex crop jacket with checkered flag contrast panels, matching ultra-short hot pants, and a wide faux-leather sponsor belt.",
+    "th_desc": "ชุดพิทเกิร์ลสาวสนามแข่งมอเตอร์สปอร์ต เสื้อแจ็คเก็ตครอปผ้ายืดสแปนเด็กซ์เงาวับรูดซิปหน้า ตกแต่งลายตารางหมากรุก จับคู่กับกางเกงฮ็อตแพนท์ขาสั้นกุดและเข็มขัดสปอนเซอร์เส้นโต",
+    "source": "default",
+    "keys": [
+      "Race Queen",
+      "Grid Girl",
+      "เรซควีนสาวสนามแข่ง",
+      "ชุดเรซควีน"
+    ]
+  },
+  {
+    "id": "Costume_Dragon_Knight_Bikini",
+    "name": "Dragon Knight Bikini",
+    "th_name": "ชุดเกราะบิกินี่อัศวินมังกร",
+    "category": "Specialty Sets",
+    "desc": "Burnished crimson dragon-scale metal plates sculpting the bust and pelvis, interconnected with delicate steel chainmail links and leather cinch straps.",
+    "th_desc": "ชุดเกราะบิกินี่อัศวินมังกรทำจากเกล็ดโลหะสีแดงเพลิงเงางาม โอบกระชับทรวงอกและสะโพก เชื่อมโยงด้วยห่วงโซ่ถักเงินและสายรัดหนังแท้ ให้ลุคนักรบสาวแฟนตาซีสุดแกร่ง",
+    "source": "default",
+    "keys": [
+      "Dragon Knight Bikini",
+      "Armor Bikini",
+      "ชุดเกราะบิกินี่อัศวินมังกร",
+      "เกราะบิกินี่"
+    ]
+  },
+  {
+    "id": "Costume_Kitsune_Shrine_Dancer",
+    "name": "Kitsune Shrine Dancer",
+    "th_name": "มิโกะจิ้งจอกเก้าหาง",
+    "category": "Specialty Sets",
+    "desc": "A flowing scarlet and pure white silk dancer robe featuring bare shoulders, oversized bell sleeves, a wide golden brocade obi, and dangling brass bell tassels.",
+    "th_desc": "ชุดระบำบูชาเทพมิโกะจิ้งจอกผ้าไหมขาวสลับแดงชาด เปิดเปลือยไหล่มน แขนเสื้อกว้างพลิ้วไหว คาดโอบิดิ้นทองลายกนกและพู่กระดิ่งทองเหลืองที่ส่งเสียงกรุ๊งกริ๊งยามก้าวเดิน",
+    "source": "default",
+    "keys": [
+      "Kitsune Shrine Dancer",
+      "Fox Miko",
+      "มิโกะจิ้งจอกเก้าหาง",
+      "มิโกะจิ้งจอก"
+    ]
+  },
+  {
+    "id": "Costume_Satin_French_Maid",
+    "name": "Satin French Maid",
+    "th_name": "เมดฝรั่งเศสผ้าซาติน",
+    "category": "Specialty Sets",
+    "desc": "A glossy black satin sweetheart minidress with scalloped white lace trim, a sheer ruffled organza apron, puffed sleeves, and lace wrist cuffs.",
+    "th_desc": "ชุดเมดฝรั่งเศสผ้าซาตินสีดำขลับแวววาว คอเว้ารูปหัวใจแต่งขอบลูกไม้ขาว ผ้ากันเปื้อนผ้าออร์แกนซ่าจับระบายโปร่งบาง แขนพองน่ารัก และปลอกข้อมือลูกไม้เข้าชุด",
+    "source": "default",
+    "keys": [
+      "Satin French Maid",
+      "French Maid",
+      "เมดฝรั่งเศสผ้าซาติน",
+      "ชุดเมด"
+    ]
+  },
+  {
+    "id": "Costume_Starlight_Idol",
+    "name": "Starlight Idol",
+    "th_name": "ไอดอลเวทีดวงดาว",
+    "category": "Specialty Sets",
+    "desc": "A sparkling pastel sequin bustier paired with tiered iridescent tulle ruffles, star-shaped crystal belt buckle, and a satin choker with trailing back ribbons.",
+    "th_desc": "ชุดไอดอลแสดงสดบนเวที เสื้อเกาะอกปักเลื่อมระยิบระยับโทนพาสเทล กระโปรงสุ่มผ้าทูลล์ซ้อนชั้นเหลือบแสง หัวเข็มขัดคริสตัลรูปดาว และโชคเกอร์ริบบิ้นทิ้งชายด้านหลัง",
+    "source": "default",
+    "keys": [
+      "Starlight Idol",
+      "Pop Idol",
+      "ไอดอลเวทีดวงดาว",
+      "ชุดไอดอล"
+    ]
+  },
+  {
+    "id": "Costume_Bondage_Bunny",
+    "name": "Bondage Bunny",
+    "th_name": "บันนี่สูทสายรัดบอนเดจ",
+    "category": "Specialty Sets",
+    "desc": "A glossy vinyl bunny bodysuit crisscrossed with delicate buckle straps and silver O-rings, featuring an open clavicle cutout and fluffy pompom tail.",
+    "th_desc": "ชุดบันนี่สูทไวนิลสีดำเงาคาดทับด้วยสายรัดบัคเคิลและห่วงเงินโอริง ดีไซน์เว้าช่วงไหปลาร้า ด้านหลังติดหางปุยสีขาวนุ่มนวล ผสมผสานความเซ็กซี่และสไตล์บอนเดจอย่างลงตัว",
+    "source": "default",
+    "keys": [
+      "Bondage Bunny",
+      "Harness Bunny",
+      "บันนี่สูทสายรัดบอนเดจ",
+      "บันนี่สายรัด"
+    ]
+  },
+  {
+    "id": "Costume_Valkyrie_Maiden",
+    "name": "Valkyrie Maiden",
+    "th_name": "วัลคิรีสาวแห่งวัลฮัลลา",
+    "category": "Specialty Sets",
+    "desc": "A silver feather-embellished breastplate, draped sheer white silk chiton with side slits, golden wrist bracers, and a winged silver circlet.",
+    "th_desc": "ชุดนักรบสาววัลคิรี เกราะอกเงินแกะสลักลวดลายขนนก สวมทับชุดผ้าไหมชีฟองสีขาวโปร่งแหวกข้าง ปลอกแขนทองคำ และมงกุฎรัดเกล้าปีกเงินศักดิ์สิทธิ์",
+    "source": "default",
+    "keys": [
+      "Valkyrie Maiden",
+      "Valkyrie Armor",
+      "วัลคิรีสาวแห่งวัลฮัลลา",
+      "ชุดวัลคิรี"
+    ]
+  },
+  {
+    "id": "Costume_Royal_Courtesan",
+    "name": "Royal Courtesan",
+    "th_name": "นางสนมหลวงแดนสวรรค์",
+    "category": "Specialty Sets",
+    "desc": "Translucent layered lavender chiffon wrap gown with a jewel-encrusted waist girdle, bare shoulders, and delicate floating arm ribbons that drift with motion.",
+    "th_desc": "ชุดผ้าคลุมชีฟองโปร่งบางสีม่วงลาเวนเดอร์ซ้อนชั้น คาดเข็มขัดเอวประดับอัญมณีวิจิตร เปลือยไหล่เนียน พร้อมสายริบบิ้นต้นแขนบางเบาที่พลิ้วไสวไปตามทุกลีลาการเคลื่อนไหว",
+    "source": "default",
+    "keys": [
+      "Royal Courtesan",
+      "Harem Gown",
+      "นางสนมหลวงแดนสวรรค์",
+      "ชุดนางสนม"
+    ]
+  },
+  {
+    "id": "Costume_Wild_Leopard_Huntress",
+    "name": "Wild Leopard Huntress",
+    "th_name": "นักล่าสาวลายเสือดาว",
+    "category": "Specialty Sets",
+    "desc": "A faux-fur trimmed leopard print micro suede halter top and matching wrap skirt with bone bead accents, braided leather ties, and fur wristlets.",
+    "th_desc": "ชุดนักล่าสาวพงไพรลายเสือดาวทำจากหนังกลับเนื้อนุ่มตกแต่งขอบขนสัตว์เทียม บราคล้องคอเว้าลึกจับคู่กระโปรงป้ายสั้นแต่งลูกปัดกระดูกสัตว์และสายหนังถัก",
+    "source": "default",
+    "keys": [
+      "Wild Leopard Huntress",
+      "Leopard Bikini",
+      "นักล่าสาวลายเสือดาว",
+      "ชุดลายเสือ"
+    ]
+  },
+  {
+    "id": "Costume_SciFi_Android_Chassis",
+    "name": "SciFi Android Chassis",
+    "th_name": "แอนดรอยด์สาวโครงสร้างซิลิโคน",
+    "category": "Specialty Sets",
+    "desc": "A matte white and chrome segmented synth-skin paneling suit with glowing cyan circuit tracings, open ribcage accents, and smooth silicone surface feel.",
+    "th_desc": "ชุดเกราะชีวภาพแอนดรอยด์สีขาวด้านสลับแผ่นโครเมียมเงาวับ มีเส้นวงจรเรืองแสงสีฟ้าพาดผ่านเรือนร่าง เว้าโชว์ช่วงเอวและกระดูกซี่โครง ให้ฟีลลิ่งผิวสัมผัสซิลิโคนสังเคราะห์ชั้นสูง",
+    "source": "default",
+    "keys": [
+      "SciFi Android Chassis",
+      "Cyborg Suit",
+      "แอนดรอยด์สาวโครงสร้างซิลิโคน",
+      "ชุดไซบอร์ก"
+    ]
+  },
+  {
+    "id": "Costume_Gothic_Nun_Latex",
+    "name": "Gothic Nun Latex",
+    "th_name": "แม่ชีลาเท็กซ์กอธิค",
+    "category": "Specialty Sets",
+    "desc": "High-gloss black rubber habit featuring a plunging neckline cutout, crucifix pendant choker, white latex coif veil, and long floor-sweeping side-slit skirt.",
+    "th_desc": "ชุดแม่ชียางลาเท็กซ์สีดำขลับขัดเงาวาววับ คอเสื้อเว้าลึกโชว์ร่องอก ประดับจี้ไม้กางเขนเงิน ผ้าคลุมศีรษะลาเท็กซ์สีขาวตัดดำ และกระโปรงยาวผ่าข้างสูงถึงสะโพก",
+    "source": "default",
+    "keys": [
+      "Gothic Nun Latex",
+      "Latex Nun",
+      "แม่ชีลาเท็กซ์กอธิค",
+      "ชุดแม่ชีลาเท็กซ์"
+    ]
+  },
+  {
+    "id": "Costume_Cowgirl_Chaps",
+    "name": "Cowgirl Chaps",
+    "th_name": "คาวเกิร์ลหนังคาวบอย",
+    "category": "Specialty Sets",
+    "desc": "A plunging distressed denim crop vest, brown suede fringe chaps worn over cheeky denim hot pants, and a crimson bandana tied loosely around the throat.",
+    "th_desc": "ชุดคาวเกิร์ลสาวตะวันตก เสื้อกั๊กยีนส์ฟอกครอปสั้นแหวกอก สวมทับกางเกงแชปส์หนังกลับสีน้ำตาลแต่งพู่ระบายคู่กับกางเกงยีนส์ขาสั้น และผ้าพันคอบันดานาสีแดงสด",
+    "source": "default",
+    "keys": [
+      "Cowgirl Chaps",
+      "Cowgirl Outfit",
+      "คาวเกิร์ลหนังคาวบอย",
+      "ชุดคาวเกิร์ล"
+    ]
+  },
+  {
+    "id": "Costume_Amazon_Warrior",
+    "name": "Amazon Warrior",
+    "th_name": "นักรบสาวอเมซอน",
+    "category": "Specialty Sets",
+    "desc": "A hardened leather battle corset, asymmetrical fur-lined gladiator war skirt, brass pectoral plates, and a braided gold torque collar.",
+    "th_desc": "ชุดนักรบสาวเผ่าอเมซอน คอร์เซ็ทหนังหนาฟอกฝาดเสริมแผ่นเกราะทองเหลือง กระโปรงสงครามทรงกลาดิเอเตอร์แต่งขอบขนสัตว์ และกำไลคอทองคำถักทรงพลัง",
+    "source": "default",
+    "keys": [
+      "Amazon Warrior",
+      "Gladiator Woman",
+      "นักรบสาวอเมซอน",
+      "ชุดนักรบหญิง"
+    ]
+  },
+  {
+    "id": "Costume_Silk_Boudoir_Bride",
+    "name": "Silk Boudoir Bride",
+    "th_name": "เจ้าสาวห้องนอนผ้าไหม",
+    "category": "Specialty Sets",
+    "desc": "A translucent white floral lace lingerie set with silk ribbon ties, paired with a cathedral-length sheer tulle veil and satin garter belt.",
+    "th_desc": "ชุดชั้นในเจ้าสาวผ้าไหมผสมลูกไม้ลายดอกไม้โปร่งแสงสีขาวบริสุทธิ์ ผูกริบบิ้นซาติน มาพร้อมผ้าคลุมหน้าเจ้าสาวผ้ามุ้งทูลล์ทิ้งตัวยาวจรดพื้นและสายรัดถุงน่องซาติน",
+    "source": "default",
+    "keys": [
+      "Silk Boudoir Bride",
+      "Bridal Lingerie",
+      "เจ้าสาวห้องนอนผ้าไหม",
+      "ชุดเจ้าสาวเซ็กซี่"
+    ]
+  },
+  {
+    "id": "Costume_Dark_Angel",
+    "name": "Dark Angel",
+    "th_name": "ทูตสวรรค์ปีกดำ",
+    "category": "Specialty Sets",
+    "desc": "A black feathered corset bra with boned support, cascading shredded chiffon high-low skirt, studded leather collar, and matching dark wrist cuffs.",
+    "th_desc": "ชุดทูตสวรรค์ตกสวรรค์ บราคอร์เซ็ทประดับขนนกสีดำขลับ เสริมโครงดันทรง กระโปรงผ้าชีฟองผ่าเฉียงชายรุ่ยสไตล์โกธิค ปลอกคอหนังประดับหมุดเงิน และปลอกข้อมือขนนก",
+    "source": "default",
+    "keys": [
+      "Dark Angel",
+      "Fallen Angel",
+      "ทูตสวรรค์ปีกดำ",
+      "นางฟ้าปีกดำ"
+    ]
+  },
+  {
+    "id": "Costume_Space_Explorer_Suit",
+    "name": "Space Explorer Suit",
+    "th_name": "ชุดนักบินอวกาศแนบเนื้อ",
+    "category": "Specialty Sets",
+    "desc": "A metallic pearl-silver skin-tight explorer suit with orange thermal pressure piping, zip-open chest panel, and magnetic collar ring.",
+    "th_desc": "ชุดสำรวจอวกาศรัดรูปเนื้อผ้าเมทัลลิกสีเงินเหลือบมุก เดินขอบด้วยท่อปรับแรงดันอุณหภูมิสีส้ม ซิปหน้าอกปรับเปิดได้ และคอเสื้อพร้อมห่วงล็อกหน้ากากสูญญากาศ",
+    "source": "default",
+    "keys": [
+      "Space Explorer Suit",
+      "Astronaut Suit",
+      "ชุดนักบินอวกาศแนบเนื้อ",
+      "ชุดอวกาศ"
+    ]
+  },
+  {
+    "id": "Top_Keyhole_Turtleneck",
+    "name": "Keyhole Turtleneck",
+    "th_name": "เสื้อคอเต่าเจาะอก",
+    "category": "Tops",
+    "desc": "A ribbed knit sleeveless sweater with a snug high turtleneck collar and a dramatic teardrop cutout exposing the cleavage.",
+    "th_desc": "เสื้อไหมพรมถักแขนกุดทรงคอเต่ากระชับ โดดเด่นด้วยช่องเจาะเว้ารูปหยดน้ำขนาดใหญ่บริเวณหน้าอก เผยเนินอกสวยอย่างสะดุดตา",
+    "source": "default",
+    "keys": [
+      "Keyhole Turtleneck",
+      "Virgin Killer",
+      "เสื้อคอเต่าเจาะอก",
+      "เสื้อเจาะอก"
+    ]
+  },
+  {
+    "id": "Top_Backless_Halter",
+    "name": "Backless Halter",
+    "th_name": "เสื้อคล้องคอเปิดหลังเปลือย",
+    "category": "Tops",
+    "desc": "A liquid silk satin halter top draping gracefully across the bust in soft folds while leaving the entire spine and lower back bare.",
+    "th_desc": "เสื้อคล้องคอผ้าไหมซาตินทิ้งตัวเป็นลอนนุ่มนวลด้านหน้า ด้านหลังเว้าเปิดโล่งตั้งแต่ต้นคอลงไปจนถึงบั้นเอว อวดแผ่นหลังเนียนสวย",
+    "source": "default",
+    "keys": [
+      "Backless Halter Top",
+      "Halter Top",
+      "เสื้อคล้องคอเปิดหลังเปลือย",
+      "เสื้อคล้องคอ"
+    ]
+  },
+  {
+    "id": "Top_Leather_Biker_Bra",
+    "name": "Leather Biker Bra",
+    "th_name": "บราหนังไบเกอร์",
+    "category": "Tops",
+    "desc": "A black motorcycle lambskin bralette styled like a mini moto jacket with functional silver zippers, snap-down lapels, and buckle straps.",
+    "th_desc": "บราหนังแกะสีดำแท้ดีไซน์แจ็คเก็ตมอเตอร์ไซค์ แต่งซิปเงินรูดได้จริง ปกเสื้อติดกระดุมแป๊ก และสายคาดบัคเคิลใต้ราวนม ให้ลุคสาวไบเกอร์สุดเท่",
+    "source": "default",
+    "keys": [
+      "Leather Biker Bra",
+      "Leather Bra",
+      "บราหนังไบเกอร์",
+      "บราหนัง"
+    ]
+  },
+  {
+    "id": "Top_Off_Shoulder_Crop",
+    "name": "Off Shoulder Crop",
+    "th_name": "เสื้อครอปเปิดไหล่",
+    "category": "Tops",
+    "desc": "A soft stretchy ribbed cotton crop top resting delicately below the collarbones, exposing bare shoulders and stopping above the navel.",
+    "th_desc": "เสื้อครอปผ้าริบเนื้อนุ่มยืดหยุ่น ขอบเสื้อปาดต่ำใต้ไหปลาร้าเปิดเปลือยหัวไหล่ทั้งสองข้าง ชายเสื้อสั้นเหนือสะดือ อวดหน้าท้องเพรียวบาง",
+    "source": "default",
+    "keys": [
+      "Off Shoulder Crop Top",
+      "Crop Top",
+      "เสื้อครอปเปิดไหล่",
+      "เสื้อเปิดไหล่"
+    ]
+  },
+  {
+    "id": "Top_Victorian_Corset",
+    "name": "Victorian Corset",
+    "th_name": "คอร์เซ็ทวิกตอเรียน",
+    "category": "Tops",
+    "desc": "A heavy damask brocade boned waist-cinching corset top with a sweetheart neckline, brass front busk clasps, and satin ribbon back lacing.",
+    "th_desc": "คอร์เซ็ทสไตล์วิกตอเรียนตัดเย็บจากผ้าดามัสก์เสริมโครงเหล็กกระชับเอวคอด คอเว้ารูปหัวใจ ด้านหน้ามีตะขอเหล็กและด้านหลังร้อยเชือกริบบิ้นซาตินปรับระดับได้",
+    "source": "default",
+    "keys": [
+      "Victorian Corset",
+      "Corset Top",
+      "คอร์เซ็ทวิกตอเรียน",
+      "คอร์เซ็ท"
+    ]
+  },
+  {
+    "id": "Top_Sheer_Lace_Blouse",
+    "name": "Sheer Lace Blouse",
+    "th_name": "เสื้อลูกไม้ซีทรู",
+    "category": "Tops",
+    "desc": "A whispering sheer black floral lace button-down blouse with ruffled collar and cuffs, casting intricate floral shadows over bare skin.",
+    "th_desc": "เสื้อเชิ้ตแขนยาวผ้าลูกไม้ซีทรูสีดำโปร่งแสงลวดลายดอกไม้วิจิตร คอเสื้อและปลายแขนจับจีบระบาย เผยเงาลูกไม้ทาบทับผิวเนียนอย่างน่าหลงใหล",
+    "source": "default",
+    "keys": [
+      "Sheer Lace Blouse",
+      "Lace Blouse",
+      "เสื้อลูกไม้ซีทรู",
+      "เสื้อลูกไม้"
+    ]
+  },
+  {
+    "id": "Top_Crisscross_Wrap",
+    "name": "Crisscross Wrap",
+    "th_name": "เสื้อพันผูกไขว้หน้า",
+    "category": "Tops",
+    "desc": "Stretchy modal fabric wide bands crossing over the breasts in an X-pattern and tying securely behind the spine, framing an underbust cutout.",
+    "th_desc": "เสื้อแถบผ้ายืดเนื้อนุ่มพันไขว้ทับทรวงอกเป็นรูปกากบาท แล้วโอบไปผูกด้านหลัง เว้าโชว์ช่วงใต้ราวนมและหน้าท้องอย่างมีสไตล์",
+    "source": "default",
+    "keys": [
+      "Crisscross Wrap Top",
+      "Wrap Top",
+      "เสื้อพันผูกไขว้หน้า",
+      "เสื้อไขว้หน้า"
+    ]
+  },
+  {
+    "id": "Top_Bolero_Sleeves",
+    "name": "Bolero Sleeves",
+    "th_name": "เสื้อครอปแขนยาวโบเลโร่",
+    "category": "Tops",
+    "desc": "An ultra-crop minimalist knit shrug featuring long snug sleeves and a mock-neck collar, leaving the entire bust and torso uncovered.",
+    "th_desc": "เสื้อครอปสั้นพิเศษสไตล์โบเลโร่ มีเพียงคอปกตั้งและแขนยาวแนบเนื้อ ปล่อยให้หน้าอกและลำตัวเปิดโล่ง เหมาะสำหรับใส่ทับบราหรือเกาะอก",
+    "source": "default",
+    "keys": [
+      "Bolero Shrug Sleeves",
+      "Arm Warmers",
+      "เสื้อครอปแขนยาวโบเลโร่",
+      "เสื้อโบเลโร่"
+    ]
+  },
+  {
+    "id": "Top_Metallic_Bandeau",
+    "name": "Metallic Bandeau",
+    "th_name": "เกาะอกเมทัลลิกแวววาว",
+    "category": "Tops",
+    "desc": "A liquid gold foil stretch bandeau top hugging the chest securely with inner silicone grip bands and catching vibrant light reflections.",
+    "th_desc": "เสื้อเกาะอกฟอยล์สีทองเมทัลลิกแวววาวเหมือนทองคำเหลว แนบกระชับรอบอกด้วยแถบซิลิโคนด้านใน เล่นแสงเงาสวยงามทุกมุมมอง",
+    "source": "default",
+    "keys": [
+      "Metallic Bandeau",
+      "Gold Bandeau",
+      "เกาะอกเมทัลลิกแวววาว",
+      "เกาะอก"
+    ]
+  },
+  {
+    "id": "Top_Sheer_Mesh_Tee",
+    "name": "Sheer Mesh Tee",
+    "th_name": "เสื้อยืดตาข่ายซีทรู",
+    "category": "Tops",
+    "desc": "A boxy cropped black fine-mesh t-shirt completely transparent to showcase whatever lingerie or skin lies underneath.",
+    "th_desc": "เสื้อยืดครอปทรงหลวมผ้าตาข่ายตาถี่สีดำ มองทะลุเห็นบราหรือผิวพรรณด้านในได้อย่างชัดเจน ให้ลุคสตรีทแฟชั่นผสมความเซ็กซี่",
+    "source": "default",
+    "keys": [
+      "Sheer Mesh Tee",
+      "Mesh Shirt",
+      "เสื้อยืดตาข่ายซีทรู",
+      "เสื้อตาข่าย"
+    ]
+  },
+  {
+    "id": "Top_Peasant_Blouse",
+    "name": "Peasant Blouse",
+    "th_name": "เสื้อบลาวส์สาวชาวไร่",
+    "category": "Tops",
+    "desc": "An elasticated white cotton milkmaid blouse with gathered ruffled neckline that sits off-the-shoulder, short puff sleeves, and a laced corset waist.",
+    "th_desc": "เสื้อบลาวส์สาวชนบทผ้าฝ้ายสีขาว คอเสื้อดึงสม็อครูดระบายปาดไหล่ แขนพองตุ๊กตา และเชือกร้อยด้านหน้าคล้ายคอร์เซ็ทขนาดเล็ก",
+    "source": "default",
+    "keys": [
+      "Peasant Blouse",
+      "Milkmaid Top",
+      "เสื้อบลาวส์สาวชาวไร่",
+      "เสื้อชาวไร่"
+    ]
+  },
+  {
+    "id": "Top_Strappy_Sports_Bra",
+    "name": "Strappy Sports Bra",
+    "th_name": "สปอร์ตบราสายรัดไขว้",
+    "category": "Tops",
+    "desc": "A performance moisture-wicking athletic bra with a scoop front and an intricate web of crossing geometric elastic back straps.",
+    "th_desc": "สปอร์ตบราออกกำลังกายเนื้อผ้าระบายอากาศได้ดี คอด้านหน้าทรงเว้าลึก ด้านหลังแต่งสายยางยืดไขว้กันเป็นลวดลายเรขาคณิตสุดประณีต",
+    "source": "default",
+    "keys": [
+      "Strappy Sports Bra",
+      "Gym Bra",
+      "สปอร์ตบราสายรัดไขว้",
+      "สปอร์ตบรา"
+    ]
+  },
+  {
+    "id": "Top_Satin_Cami",
+    "name": "Satin Cami",
+    "th_name": "เสื้อสายเดี่ยวผ้าซาติน",
+    "category": "Tops",
+    "desc": "A bias-cut emerald satin camisole with delicate spaghetti straps and scalloped black eyelash lace framing the deep V-neckline.",
+    "th_desc": "เสื้อสายเดี่ยวผ้าซาตินสีเขียวมรกตตัดเย็บเฉียงทิ้งตัวเข้ารูป แต่งขอบคอวีลึกด้วยลูกไม้ขนตาสีดำบางเบา ให้สัมผัสเรียบลื่นนุ่มนวล",
+    "source": "default",
+    "keys": [
+      "Satin Lace Camisole",
+      "Silk Cami",
+      "เสื้อสายเดี่ยวผ้าซาติน",
+      "เสื้อสายเดี่ยว"
+    ]
+  },
+  {
+    "id": "Top_Front_Tie_Cardigan",
+    "name": "Front Tie Cardigan",
+    "th_name": "คาร์ดิแกนผูกโบว์หน้า",
+    "category": "Tops",
+    "desc": "A lightweight pastel knit long-sleeve crop cardigan fastened solely by a pair of delicate silk ribbons tied in a bow right at the bustline.",
+    "th_desc": "เสื้อคาร์ดิแกนไหมพรมถักเนื้อบางเบาแขนยาว ติดกระดุมเปิดโล่ง เชื่อมต่อกันเพียงริบบิ้นผ้าไหมผูกโบว์ตรงกลางร่องอก",
+    "source": "default",
+    "keys": [
+      "Front Tie Cardigan",
+      "Tie Top",
+      "คาร์ดิแกนผูกโบว์หน้า",
+      "คาร์ดิแกน"
+    ]
+  },
+  {
+    "id": "Top_Dragon_Embroidered_Vest",
+    "name": "Dragon Embroidered Vest",
+    "th_name": "เสื้อกั๊กผ้าไหมปักดิ้นทอง",
+    "category": "Tops",
+    "desc": "A traditional Chinese red silk jacquard vest with gold metallic thread dragon embroidery, standing mandarin collar, and knotted frog closures.",
+    "th_desc": "เสื้อกั๊กผ้าไหมจีนสีแดงสดทอลายในตัว ปักลายมังกรเหินด้วยดิ้นทองคำ คอจีนทรงตั้ง และกระดุมถักแบบจีนโบราณ",
+    "source": "default",
+    "keys": [
+      "Dragon Silk Vest",
+      "Oriental Vest",
+      "เสื้อกั๊กผ้าไหมปักดิ้นทอง",
+      "เสื้อกั๊กไหม"
+    ]
+  },
+  {
+    "id": "Bottom_Pleated_Tennis_Skirt",
+    "name": "Pleated Tennis Skirt",
+    "th_name": "กระโปรงเทนนิสจีบรอบ",
+    "category": "Bottoms",
+    "desc": "A crisp snowy white athletic mini skirt with sharp knife pleats, a wide fitted waistband, and an active sporty bounce.",
+    "th_desc": "กระโปรงเทนนิสสั้นสีขาวสะอาดตา อัดจีบคมกริบรอบตัว ขอบเอวเรียบกระชับ พลิ้วไหวเด้งตามจังหวะก้าวเดินอย่างกระปรี้กระเปร่า",
+    "source": "default",
+    "keys": [
+      "Pleated Tennis Skirt",
+      "Tennis Skirt",
+      "กระโปรงเทนนิสจีบรอบ",
+      "กระโปรงเทนนิส"
+    ]
+  },
+  {
+    "id": "Bottom_Lace_Trim_Bloomers",
+    "name": "Lace Trim Bloomers",
+    "th_name": "กางเกงบลูมเมอร์ลูกไม้",
+    "category": "Bottoms",
+    "desc": "Puffy pastel pink cotton lounge shorts with elasticated frilly leg openings, delicate satin bows, and tiered eyelet lace trim.",
+    "th_desc": "กางเกงบลูมเมอร์ขาสั้นทรงพองผ้าฝ้ายสีชมพูพาสเทล ขากางเกงรูดยางยืดแต่งระบายลูกไม้และโบว์ริบบิ้นซาติน ให้ลุคคุณหนูห้องนอนแสนหวาน",
+    "source": "default",
+    "keys": [
+      "Lace Trim Bloomers",
+      "Bloomers",
+      "กางเกงบลูมเมอร์ลูกไม้",
+      "บลูมเมอร์"
+    ]
+  },
+  {
+    "id": "Bottom_Side_Tie_Bikini",
+    "name": "Side Tie Bikini",
+    "th_name": "กางเกงบิกินี่ผูกข้าง",
+    "category": "Bottoms",
+    "desc": "Ultra-low rise swimwear bottoms in electric magenta with thin string straps tied in dainty easy-pull bows at each hipbone.",
+    "th_desc": "กางเกงว่ายน้ำบิกินี่เอวต่ำสีบานเย็นสดใส ด้านข้างผูกด้วยสายเส้นเล็กเป็นโบว์บริเวณกระดูกสะโพกทั้งสองข้าง ถอดออกได้ง่ายดาย",
+    "source": "default",
+    "keys": [
+      "Side Tie Bikini Bottoms",
+      "Bikini Bottoms",
+      "กางเกงบิกินี่ผูกข้าง",
+      "บิกินี่ผูกข้าง"
+    ]
+  },
+  {
+    "id": "Bottom_High_Waist_Shorts",
+    "name": "High Waist Shorts",
+    "th_name": "กางเกงขาสั้นเอวสูงทรงวินเทจ",
+    "category": "Bottoms",
+    "desc": "Form-sculpting 1950s-inspired vintage high-rise denim shorts with copper button fly, rolled cuffs, and a snug fit around the hips.",
+    "th_desc": "กางเกงยีนส์ขาสั้นเอวสูงสไตล์วินเทจยุค 50s ตัดเย็บเน้นส่วนโค้งเว้าของสะโพกและเอว ติดกระดุมทองแดงเรียงแถวและพับขอบขากางเกงเรียบร้อย",
+    "source": "default",
+    "keys": [
+      "Vintage High Waist Shorts",
+      "Denim Shorts",
+      "กางเกงขาสั้นเอวสูงทรงวินเทจ",
+      "กางเกงยีนส์เอวสูง"
+    ]
+  },
+  {
+    "id": "Bottom_Glossy_Vinyl_Miniskirt",
+    "name": "Glossy Vinyl Miniskirt",
+    "th_name": "มินิสเกิร์ตไวนิลเงาวับ",
+    "category": "Bottoms",
+    "desc": "A slick black patent vinyl micro skirt with an exposed full-length silver side zipper, shining with mirror-like reflections.",
+    "th_desc": "มินิสเกิร์ตสั้นกุดทำจากไวนิลสีดำขัดเงาวับสะท้อนแสงราวกับกระจก โดดเด่นด้วยซิปรูดโลหะสีเงินยาวตลอดด้านข้าง",
+    "source": "default",
+    "keys": [
+      "Glossy Vinyl Miniskirt",
+      "Vinyl Skirt",
+      "มินิสเกิร์ตไวนิลเงาวับ",
+      "กระโปรงไวนิล"
+    ]
+  },
+  {
+    "id": "Bottom_Slit_Maxi_Skirt",
+    "name": "Slit Maxi Skirt",
+    "th_name": "กระโปรงยาวผ่าข้างสูง",
+    "category": "Bottoms",
+    "desc": "A floor-skimming jersey modal maxi skirt in burgundy, featuring a split that opens all the way up to the hip crest on one leg.",
+    "th_desc": "กระโปรงยาวจรดพื้นผ้าเจอร์ซีย์สีแดงเบอร์กันดีทิ้งตัวสวย ผ่าข้างสูงยาวขึ้นไปจนถึงขอบสะโพก อวดเรียวขาเพรียวยามก้าวเดิน",
+    "source": "default",
+    "keys": [
+      "High Slit Maxi Skirt",
+      "Maxi Skirt",
+      "กระโปรงยาวผ่าข้างสูง",
+      "กระโปรงผ่าสูง"
+    ]
+  },
+  {
+    "id": "Bottom_Booty_Shorts",
+    "name": "Booty Shorts",
+    "th_name": "กางเกงขาสั้นบิวตี้ช็อต",
+    "category": "Bottoms",
+    "desc": "Tight athletic black spandex shorts with white contrast piping along the curved dolphin hem, hugging the glutes firmly.",
+    "th_desc": "กางเกงขาสั้นแนบเนื้อผ้าสแปนเด็กซ์สีดำ กุ๊นขอบโค้งทรงดอลฟินด้วยผ้าสีขาว กระชับสะโพกและบั้นท้ายอย่างชัดเจน",
+    "source": "default",
+    "keys": [
+      "Spandex Booty Shorts",
+      "Booty Shorts",
+      "กางเกงขาสั้นบิวตี้ช็อต",
+      "กางเกงบิวตี้ช็อต"
+    ]
+  },
+  {
+    "id": "Bottom_Flared_Skater_Skirt",
+    "name": "Flared Skater Skirt",
+    "th_name": "กระโปรงสเก็ตเตอร์บาน",
+    "category": "Bottoms",
+    "desc": "A circle-cut stretchy scuba skater skirt that flares widely around the mid-thigh, swirling dramatically whenever turning.",
+    "th_desc": "กระโปรงบานทรงสเก็ตเตอร์ตัดเย็บทรงวงกลมจากผ้าสกูบ้ายืดหยุ่น ชายกระโปรงบานสะพรั่งพลิ้วไหวอย่างร่าเริงทุกการหมุนตัว",
+    "source": "default",
+    "keys": [
+      "Flared Skater Skirt",
+      "Skater Skirt",
+      "กระโปรงสเก็ตเตอร์บาน",
+      "กระโปรงบาน"
+    ]
+  },
+  {
+    "id": "Bottom_Distressed_Jeans",
+    "name": "Distressed Jeans",
+    "th_name": "กางเกงยีนส์ขาดรอยขาด",
+    "category": "Bottoms",
+    "desc": "Low-slung faded indigo skinny denim jeans with heavy shredded distressing along the front thighs, knees, and rear pockets.",
+    "th_desc": "กางเกงยีนส์สกินนี่เอวต่ำสีอินดิโก้ฟอก แต่งรอยขาดเส้นด้ายรุ่ยตามแนวต้นขาและหัวเข่า เผยผิวเนื้อด้านในสไตล์สตรีทเซอร์",
+    "source": "default",
+    "keys": [
+      "Distressed Skinny Jeans",
+      "Ripped Jeans",
+      "กางเกงยีนส์ขาดรอยขาด",
+      "ยีนส์ขาด"
+    ]
+  },
+  {
+    "id": "Bottom_Leather_Micro_Skirt",
+    "name": "Leather Micro Skirt",
+    "th_name": "ไมโครสเกิร์ตหนังแท้",
+    "category": "Bottoms",
+    "desc": "An ultra-daring 7-inch black lambskin leather skirt with snap-button front and raw cut hem, barely covering the essentials.",
+    "th_desc": "ไมโครสเกิร์ตหนังแกะแท้สีดำความยาวเพียง 7 นิ้ว ติดกระดุมแป๊กด้านหน้า ชายกระโปรงตัดขอบเปลือย เผยเรียวขาอย่างถึงที่สุด",
+    "source": "default",
+    "keys": [
+      "Leather Micro Skirt",
+      "Leather Skirt",
+      "ไมโครสเกิร์ตหนังแท้",
+      "กระโปรงหนัง"
+    ]
+  },
+  {
+    "id": "Bottom_Sarong_Wrap",
+    "name": "Sarong Wrap",
+    "th_name": "ผ้าพันเอวสไตล์ซารอง",
+    "category": "Bottoms",
+    "desc": "A semi-translucent floral chiffon beach wrap tied loosely at the hip, fluttering open with sea breezes to reveal the bikini beneath.",
+    "th_desc": "ผ้าพันเอวผืนบางลายดอกไม้เมืองร้อนผ้าชีฟอง ผูกปมหลวมๆ บริเวณสะโพก พลิ้วเปิดตามแรงลมเผยให้เห็นชุดว่ายน้ำด้านใน",
+    "source": "default",
+    "keys": [
+      "Tropical Chiffon Sarong",
+      "Sarong",
+      "ผ้าพันเอวสไตล์ซารอง",
+      "ผ้าซารอง"
+    ]
+  },
+  {
+    "id": "Bottom_Cheeky_Boy_Shorts",
+    "name": "Cheeky Boy Shorts",
+    "th_name": "กางเกงในบอยช็อตต์ผ้าฝ้าย",
+    "category": "Bottoms",
+    "desc": "Comfortable heather grey ribbed cotton boy shorts with an elastic white logo waistband and curved cheeky leg cut.",
+    "th_desc": "กางเกงในทรงบอยช็อตต์ผ้าฝ้ายริบสีเทาเนื้อนุ่ม ขอบเอวยางยืดสีขาวสไตล์สปอร์ต เว้าโชว์แก้มก้นเล็กน้อยเพื่อความสบายและมีเสน่ห์",
+    "source": "default",
+    "keys": [
+      "Cheeky Cotton Boy Shorts",
+      "Boy Shorts",
+      "กางเกงในบอยช็อตต์ผ้าฝ้าย",
+      "บอยช็อตต์"
+    ]
+  },
+  {
+    "id": "Dress_Backless_Silk_Gown",
+    "name": "Backless Silk Gown",
+    "th_name": "ชุดราตรีผ้าไหมเปิดหลังลึก",
+    "category": "Dresses",
+    "desc": "A sweeping floor-length midnight blue silk dress with halter neckline, completely backless all the way down to the tailbone.",
+    "th_desc": "ชุดราตรียาวผ้าไหมแท้สีน้ำเงินมิดไนท์บลู คอคล้องระบายสวยงาม แผ่นหลังเปิดโล่งลึกจรดสะโพกด้านล่าง ให้ลุคพรมแดงหรูหราสง่างาม",
+    "source": "default",
+    "keys": [
+      "Backless Silk Evening Gown",
+      "Backless Gown",
+      "ชุดราตรีผ้าไหมเปิดหลังลึก",
+      "ชุดราตรีเปิดหลัง"
+    ]
+  },
+  {
+    "id": "Dress_Gothic_Velvet_Gown",
+    "name": "Gothic Velvet Gown",
+    "th_name": "ชุดราตรีกำมะหยี่กอธิค",
+    "category": "Dresses",
+    "desc": "Heavy royal purple crushed velvet dress with square neckline, flared trumpet bell sleeves, and a gold-laced corset bodice.",
+    "th_desc": "ชุดราตรียาวผ้ากำมะหยี่สีม่วงเข้ม คอเหลี่ยมเปิดเนินอก แขนเสื้อบานทรงทรัมเป็ต และช่วงเอวร้อยเชือกดิ้นทองทรงคอร์เซ็ท",
+    "source": "default",
+    "keys": [
+      "Gothic Velvet Gown",
+      "Gothic Gown",
+      "ชุดราตรีกำมะหยี่กอธิค",
+      "ชุดราตรีกอธิค"
+    ]
+  },
+  {
+    "id": "Dress_Bandage_Bodycon",
+    "name": "Bandage Bodycon",
+    "th_name": "เดรสรัดรูปผ้ายืดแบนเดจ",
+    "category": "Dresses",
+    "desc": "A thick elastane bandage dress woven from sculpted cross-wrapping strips in scarlet red, holding and emphasizing curves firmly.",
+    "th_desc": "เดรสบอดี้คอนผ้ายืดแบนเดจสีแดงเพลิง แถบผ้ายืดทอหนาพิเศษโอบรัดสรีระเป็นลอนกระชับ ช่วยเน้นส่วนเว้าส่วนโค้งรูปนาฬิกาทรายอย่างทรงพลัง",
+    "source": "default",
+    "keys": [
+      "Bandage Bodycon Dress",
+      "Bodycon Dress",
+      "เดรสรัดรูปผ้ายืดแบนเดจ",
+      "เดรสรัดรูป"
+    ]
+  },
+  {
+    "id": "Dress_Chinese_Qipao_Mini",
+    "name": "Chinese Qipao Mini",
+    "th_name": "กี่เพ้าสั้นผ่าข้าง",
+    "category": "Dresses",
+    "desc": "A modern shortened scarlet silk qipao featuring peony brocade, teardrop chest keyhole, mandarin collar, and thigh-high side slits.",
+    "th_desc": "ชุดกี่เพ้าผ้าไหมสั้นสีแดงสดลายดอกโบตั๋น คอจีนทรงสง่า เจาะช่องเว้าตรงกลางอก และผ่าข้างสูงเปิดต้นขาขาวเนียน",
+    "source": "default",
+    "keys": [
+      "Mini Silk Qipao",
+      "Cheongsam Mini",
+      "กี่เพ้าสั้นผ่าข้าง",
+      "กี่เพ้าสั้น"
+    ]
+  },
+  {
+    "id": "Dress_Summer_Floral_Wrap",
+    "name": "Summer Floral Wrap",
+    "th_name": "เดรสป้ายหน้ารับลมร้อน",
+    "category": "Dresses",
+    "desc": "A fluttering lightweight chiffon wrap dress decorated with pastel blossoms, a V-neckline tied at the waist, and ruffled hem.",
+    "th_desc": "ชุดเดรสป้ายหน้าผ้าชีฟองเนื้อเบาพิมพ์ลายดอกไม้พาสเทล คอวีป้ายผูกริบบิ้นข้างเอว ชายกระโปรงระบายพลิ้วไหวรับลมฤดูร้อนอย่างอ่อนหวาน",
+    "source": "default",
+    "keys": [
+      "Summer Floral Wrap Dress",
+      "Wrap Dress",
+      "เดรสป้ายหน้ารับลมร้อน",
+      "เดรสป้ายหน้า"
+    ]
+  },
+  {
+    "id": "Dress_Trench_Coat_Dress",
+    "name": "Trench Coat Dress",
+    "th_name": "เดรสเทรนช์โค้ทมีเข็มขัด",
+    "category": "Dresses",
+    "desc": "A tailored beige cotton gabardine double-breasted trench coat dress worn buttoned tight with an oversized belt cinch.",
+    "th_desc": "เดรสสไตล์เทรนช์โค้ทกระดุมสองแถวสีเบจ คัตติ้งเนี้ยบ คาดเข็มขัดหัวเหล็กเส้นโตกระชับเอว ให้ลุคสายลับสาวทรงเสน่ห์",
+    "source": "default",
+    "keys": [
+      "Belted Trench Dress",
+      "Trench Dress",
+      "เดรสเทรนช์โค้ทมีเข็มขัด",
+      "เดรสโค้ท"
+    ]
+  },
+  {
+    "id": "Dress_Sheer_Lace_Maxi",
+    "name": "Sheer Lace Maxi",
+    "th_name": "เดรสยาวลูกไม้โปร่งแสง",
+    "category": "Dresses",
+    "desc": "An ethereal black sheer corded-lace maxi dress worn as an overlay, draping all the way to the floor in delicate floral patterns.",
+    "th_desc": "ชุดเดรสยาวผ้าลูกไม้ซีทรูสีดำโปร่งแสงทั้งตัว ลวดลายลูกไม้ถักแน่น ลากชายยาวจรดพื้น อวดสรีระและชุดชั้นในด้านในอย่างมีชั้นเชิง",
+    "source": "default",
+    "keys": [
+      "Sheer Lace Maxi Dress",
+      "Lace Maxi",
+      "เดรสยาวลูกไม้โปร่งแสง",
+      "เดรสลูกไม้"
+    ]
+  },
+  {
+    "id": "Dress_Cocktail_Sparkle",
+    "name": "Cocktail Sparkle",
+    "th_name": "เดรสค็อกเทลระยิบระยับ",
+    "category": "Dresses",
+    "desc": "A mini party dress encrusted with shimmering champagne gold sequins that catch every ray of ambient party lighting.",
+    "th_desc": "ชุดเดรสสั้นออกงานปาร์ตี้ค็อกเทล ปักเลื่อมสีแชมเปญโกลด์ประกายแวววาวรอบตัว สะท้อนแสงไฟวิบวับเปล่งประกายในค่ำคืนราตรี",
+    "source": "default",
+    "keys": [
+      "Sparkling Sequin Cocktail Dress",
+      "Sequin Dress",
+      "เดรสค็อกเทลระยิบระยับ",
+      "เดรสเลื่อม"
+    ]
+  },
+  {
+    "id": "Dress_Knit_Sweater_Dress",
+    "name": "Knit Sweater Dress",
+    "th_name": "เดรสไหมพรมถักเนื้อนุ่ม",
+    "category": "Dresses",
+    "desc": "A cozy cream-colored chunky cable-knit sweater dress with a foldover off-the-shoulder neckline, hugging down to mid-thigh.",
+    "th_desc": "เดรสไหมพรมถักเปียเนื้อหนานุ่มสีครีม คอพับกว้างปาดเปิดไหล่เนียน ชายกระโปรงยาวคลุมถึงกึ่งกลางต้นขา ให้ความรู้สึกอบอุ่นและเซ็กซี่ในคราวเดียว",
+    "source": "default",
+    "keys": [
+      "Off-Shoulder Sweater Dress",
+      "Sweater Dress",
+      "เดรสไหมพรมถักเนื้อนุ่ม",
+      "เดรสไหมพรม"
+    ]
+  },
+  {
+    "id": "Dress_Gothic_Lolita_Jumper",
+    "name": "Gothic Lolita Jumper",
+    "th_name": "จัมเปอร์สเกิร์ตโลลิต้า",
+    "category": "Dresses",
+    "desc": "A Victorian-style black velvet jumper dress with crossed shoulder straps, lace-up front corset panel, and tiered frilly skirt.",
+    "th_desc": "ชุดจัมเปอร์สเกิร์ต (JSK) ผ้ากำมะหยี่สีดำสไตล์วิกตอเรียน สายเอี๊ยมไขว้หลัง ด้านหน้าแต่งเชือกร้อยคอร์เซ็ทและกระโปรงสุ่มระบายลูกไม้เป็นชั้น",
+    "source": "default",
+    "keys": [
+      "Lolita Jumper Skirt Dress",
+      "JSK Lolita",
+      "จัมเปอร์สเกิร์ตโลลิต้า",
+      "ชุดโลลิต้า"
+    ]
+  },
+  {
+    "id": "Dress_Kimono_Mini_Robe",
+    "name": "Kimono Mini Robe",
+    "th_name": "ยูกาตะสั้นประยุกต์",
+    "category": "Dresses",
+    "desc": "A thigh-skimming glossy satin kimono mini dress in black and gold cherry blossoms, cinched tightly with a stiff brocade obi sash.",
+    "th_desc": "ชุดกิโมโนสั้นประยุกต์ตัดเย็บจากผ้าซาตินดำพิมพ์ลายดอกซากุระทอง ชายกระโปรงสั้นเหนือเข่า คาดโอบิผ้าดิ้นทองหนากระชับเอวสวยงาม",
+    "source": "default",
+    "keys": [
+      "Short Kimono Robe Dress",
+      "Mini Kimono",
+      "ยูกาตะสั้นประยุกต์",
+      "กิโมโนสั้น"
+    ]
+  },
+  {
+    "id": "Fullbody_Metallic_Catsuit",
+    "name": "Metallic Catsuit",
+    "th_name": "แคทสูทเมทัลลิกประกายมุก",
+    "category": "Fullbody Suits",
+    "desc": "A full-length liquid pearl-silver metallic spandex catsuit covering from high neck to ankles, with a two-way hidden spine zipper.",
+    "th_desc": "ชุดแคทสูทเต็มตัวผ้ายืดเมทัลลิกสีเงินเหลือบมุกแนบเนื้อตั้งแต่ลำคอจรดข้อเท้า มาพร้อมซิปซ่อนสองทางด้านหลัง รัดกระชับสัดส่วนทุกตารางนิ้ว",
+    "source": "default",
+    "keys": [
+      "Metallic Catsuit",
+      "Liquid Catsuit",
+      "แคทสูทเมทัลลิกประกายมุก",
+      "แคทสูท"
+    ]
+  },
+  {
+    "id": "Fullbody_Fishnet_Bodysuit",
+    "name": "Fishnet Bodysuit",
+    "th_name": "บอดี้สูทตาข่ายเต็มตัว",
+    "category": "Fullbody Suits",
+    "desc": "A seamless stretchy black fishnet full-body stocking wrapping the torso, arms, and legs in fine geometric diamond netting.",
+    "th_desc": "ชุดบอดี้สต็อกกิ้งผ้าตาข่ายยืดหยุ่นไร้ตะเข็บสีดำขลับ โอบรัดเรือนร่างตั้งแต่ลำตัว แขน และเรียวขาด้วยลวดลายตาข่ายข้าวหลามตัดแนบเนียน",
+    "source": "default",
+    "keys": [
+      "Fishnet Bodystocking",
+      "Fishnet Suit",
+      "บอดี้สูทตาข่ายเต็มตัว",
+      "ชุดตาข่ายเต็มตัว"
+    ]
+  },
+  {
+    "id": "Fullbody_Diving_Wetsuit",
+    "name": "Diving Wetsuit",
+    "th_name": "ชุดเว็ทสูทดำน้ำสปอร์ต",
+    "category": "Fullbody Suits",
+    "desc": "A sleek neoprene surfing wetsuit with high neck, bright turquoise side contouring panels, and a long pull-cord back zipper.",
+    "th_desc": "ชุดเว็ทสูทดำน้ำผ้านีโอพรีนเนื้อนุ่มกระชับ คอตั้ง ตัดต่อแถบสีฟ้าเทอร์ควอยซ์ด้านข้างช่วยพรางและขับเน้นสรีระ พร้อมสายดึงซิปยาวด้านหลัง",
+    "source": "default",
+    "keys": [
+      "Sporty Diving Wetsuit",
+      "Wetsuit",
+      "ชุดเว็ทสูทดำน้ำสปอร์ต",
+      "ชุดดำน้ำ"
+    ]
+  },
+  {
+    "id": "Fullbody_Lace_Bodysuit",
+    "name": "Lace Bodysuit",
+    "th_name": "บอดี้สูทลูกไม้โปร่ง",
+    "category": "Fullbody Suits",
+    "desc": "A sheer long-sleeve black lace bodysuit with snap-crotch closure, scalloped neckline, and floral tracings mapping the torso.",
+    "th_desc": "ชุดบอดี้สูทแขนยาวผ้าลูกไม้โปร่งแสงสีดำสนิท ลวดลายดอกไม้เลื้อยผ่านลำตัว คอเว้าหยัก และกระดุมแป๊กตรงเป้าเปิดปิดสะดวก",
+    "source": "default",
+    "keys": [
+      "Floral Lace Bodysuit",
+      "Lace Bodysuit",
+      "บอดี้สูทลูกไม้โปร่ง",
+      "บอดี้สูทลูกไม้"
+    ]
+  },
+  {
+    "id": "Fullbody_High_Cut_Leotard",
+    "name": "High Cut Leotard",
+    "th_name": "ลีโอตาร์ดเว้าขาสูงพิเศษ",
+    "category": "Fullbody Suits",
+    "desc": "A glossy neon pink nylon leotard cut ultra-high above the hip bones in vintage 1980s fitness style, accentuating leg length.",
+    "th_desc": "ชุดลีโอตาร์ดผ้านิยมยุค 80s สีชมพูนีออนเงาวาว เว้าโคนขาสูงลิ่วขึ้นไปเหนือแนวกระดูกสะโพก ช่วยขับเน้นให้เรียวขาดูยาวเพรียวสะกดสายตา",
+    "source": "default",
+    "keys": [
+      "80s High Cut Leotard",
+      "Aerobic Leotard",
+      "ลีโอตาร์ดเว้าขาสูงพิเศษ",
+      "ลีโอตาร์ด"
+    ]
+  },
+  {
+    "id": "Fullbody_SciFi_Pilot_Suit",
+    "name": "SciFi Pilot Suit",
+    "th_name": "ชุดนักบินไซไฟสูญญากาศ",
+    "category": "Fullbody Suits",
+    "desc": "A pressurized EVA pilot suit with flexible segmented joints, spine interface nodes, matte charcoal finish, and crimson chest armor.",
+    "th_desc": "ชุดปลั๊กสูทนักบินหุ่นรบไซไฟสีเทาเข้มตัดเกราะอกสีแดง เสริมข้อต่อยืดหยุ่นรองรับแรงกดอากาศและพอร์ตเชื่อมต่อระบบประสาทด้านหลัง",
+    "source": "default",
+    "keys": [
+      "SciFi Pilot Plugsuit",
+      "Pilot Suit",
+      "ชุดนักบินไซไฟสูญญากาศ",
+      "ชุดปลั๊กสูท"
+    ]
+  },
+  {
+    "id": "Fullbody_Harness_Unitard",
+    "name": "Harness Unitard",
+    "th_name": "ยูนิคอร์นสูทสายรัดบอนเดจ",
+    "category": "Fullbody Suits",
+    "desc": "A matte black seamless unitard overlaid with an integrated web of faux-leather harness straps and chrome O-rings contouring the bust and thighs.",
+    "th_desc": "ชุดยูนิคอร์นสูทแนบเนื้อสีดำด้านที่เย็บติดสายรัดหนังเทียมและห่วงเงินโอริงรอบอกและโคนขา ผสานแฟชั่นชุดแนบเนื้อและบอนเดจอย่างมีระดับ",
+    "source": "default",
+    "keys": [
+      "Bondage Harness Unitard",
+      "Harness Unitard",
+      "ยูนิคอร์นสูทสายรัดบอนเดจ",
+      "ยูนิคอร์นสูท"
+    ]
+  },
+  {
+    "id": "Legwear_Lace_Top_StayUps",
+    "name": "Lace StayUps",
+    "th_name": "ถุงน่องสเตย์อัพขอบลูกไม้",
+    "category": "Legwear",
+    "desc": "Sheer 15-denier glossy black thigh-high stockings with wide scalloped lace bands backed by hidden silicone gripper strips.",
+    "th_desc": "ถุงน่องยาวระดับต้นขาเนื้อเชียร์บาง 15 ดีเนียร์ ขอบลูกไม้ลูกฟูกกว้างแต่งแถบซิลิโคนกันลื่นด้านใน เกาะกระชับต้นขาแน่นโดยไม่ต้องใช้สายรัด",
+    "source": "default",
+    "keys": [
+      "Lace Top Stay-Up Stockings",
+      "Stay Ups",
+      "ถุงน่องสเตย์อัพขอบลูกไม้",
+      "ถุงน่องสเตย์อัพ"
+    ]
+  },
+  {
+    "id": "Legwear_Diamond_Fishnets",
+    "name": "Diamond Fishnets",
+    "th_name": "ถุงน่องตาข่ายลายเพชร",
+    "category": "Legwear",
+    "desc": "Intricate micro-fishnet tights woven into a repeating diamond geometric lattice pattern, accentuating leg definition.",
+    "th_desc": "ถุงน่องตาข่ายเส้นละเอียดทอลายตารางเพชรเรขาคณิต ช่วยสร้างมิติเงาและเน้นกล้ามเนื้อเรียวขาให้ดูเพรียวสวยน่ามอง",
+    "source": "default",
+    "keys": [
+      "Diamond Pattern Fishnets",
+      "Diamond Fishnets",
+      "ถุงน่องตาข่ายลายเพชร",
+      "ถุงน่องตาข่าย"
+    ]
+  },
+  {
+    "id": "Legwear_Thigh_High_Leather_Boots",
+    "name": "Thigh High Leather Boots",
+    "th_name": "รองเท้าบูทหนังสูงเหนือเข่า",
+    "category": "Legwear",
+    "desc": "Glossy black patent leather stiletto boots rising high past the knees, with full inner zippers and razor-sharp heels.",
+    "th_desc": "รองเท้าบูทหนังแท้ส้นเข็มสีดำขัดเงาวับ ทรงสูงขึ้นไปเหนือหัวเข่าถึงกึ่งกลางต้นขา ซิปยาวด้านใน ส้นแหลมคมกริบเพิ่มความมั่นใจ",
+    "source": "default",
+    "keys": [
+      "Thigh-High Leather Stiletto Boots",
+      "Thigh High Boots",
+      "รองเท้าบูทหนังสูงเหนือเข่า",
+      "บูทหนังสูง"
+    ]
+  },
+  {
+    "id": "Legwear_Striped_Knee_Socks",
+    "name": "Striped Knee Socks",
+    "th_name": "ถุงเท้าลายขวางยาวเหนือเข่า",
+    "category": "Legwear",
+    "desc": "Soft ribbed cotton thigh-high socks with alternating horizontal sky-blue and white stripes, popular in Japanese schoolgirl fashion.",
+    "th_desc": "ถุงเท้ายาวเหนือเข่าผ้าริบคอตตอนเนื้อนุ่มลายขวางสลับสีขาว-ฟ้าพาสเทล สไตล์อะนิเมะยอดนิยม ให้ลุคน่ารักสดใสขี้เล่น",
+    "source": "default",
+    "keys": [
+      "Striped Anime Thigh Socks",
+      "Thigh High Socks",
+      "ถุงเท้าลายขวางยาวเหนือเข่า",
+      "ถุงเท้ายาว"
+    ]
+  },
+  {
+    "id": "Legwear_Wet_Look_Leggings",
+    "name": "Wet Look Leggings",
+    "th_name": "เลกกิ้งหนังเทียมเงาเปียก",
+    "category": "Legwear",
+    "desc": "Form-hugging black polyurethane stretch leggings with high-gloss liquid wet-look sheen, molding smoothly over hips and calves.",
+    "th_desc": "กางเกงเลกกิ้งผ้ายืดเคลือบโพลียูรีเทนสีดำเงาวับราวกับเปียกน้ำ โอบกระชับสะโพกและเรียวขาได้อย่างแนบเนียนทุกสัดส่วน",
+    "source": "default",
+    "keys": [
+      "Wet Look Faux-Leather Leggings",
+      "Wet Look Leggings",
+      "เลกกิ้งหนังเทียมเงาเปียก",
+      "เลกกิ้งหนัง"
+    ]
+  },
+  {
+    "id": "Legwear_Garter_Leg_Harness",
+    "name": "Garter Leg Harness",
+    "th_name": "สายรัดต้นขาฮาร์เนสคู่",
+    "category": "Legwear",
+    "desc": "Dual black faux-leather thigh bands linked with silver O-rings, studded eyelets, and dangling elastic clips for stockings.",
+    "th_desc": "สายรัดต้นขาหนังเทียมสีดำเส้นคู่ เชื่อมต่อด้วยห่วงเงินโอริง ตาไก่โลหะ และคลิปยางยืดสำหรับหนีบถุงน่อง สไตล์พังก์แฟชั่นสุดเปรี้ยว",
+    "source": "default",
+    "keys": [
+      "Double Leg Harness & Garters",
+      "Leg Harness",
+      "สายรัดต้นขาฮาร์เนสคู่",
+      "สายรัดต้นขา"
+    ]
+  },
+  {
+    "id": "Misc_Boyfriend_Shirt",
+    "name": "Boyfriend Shirt",
+    "th_name": "เสื้อเชิ้ตโอเวอร์ไซส์ผู้ชาย",
+    "category": "Daywear & Misc",
+    "desc": "An oversized crisp white cotton button-up shirt worn loose over bare skin, falling to mid-thigh with rolled sleeves and unbuttoned collar.",
+    "th_desc": "เสื้อเชิ้ตผ้าฝ้ายสีขาวตัวโคร่งของผู้ชาย สวมคลุมบนผิวเปลือยเปล่าอย่างหลวมๆ ชายเสื้อยาวคลุมถึงกึ่งกลางต้นขา พับแขนเสื้อและปลดกระดุมบนเผยไหปลาร้า",
+    "source": "default",
+    "keys": [
+      "Oversized Boyfriend Shirt",
+      "Boyfriend Shirt",
+      "เสื้อเชิ้ตโอเวอร์ไซส์ผู้ชาย",
+      "เสื้อเชิ้ตโอเวอร์ไซส์"
+    ]
+  },
+  {
+    "id": "Misc_Silk_Pajama_Set",
+    "name": "Silk Pajama Set",
+    "th_name": "ชุดนอนผ้าไหมซาตินสองชิ้น",
+    "category": "Daywear & Misc",
+    "desc": "A champagne silk pajama set featuring a short-sleeve button-down top with white piping, paired with matching loose drawstring shorts.",
+    "th_desc": "ชุดนอนผ้าไหมซาตินสีแชมเปญสองชิ้น เสื้อคอปกแขนสั้นกุ๊นขอบขาวคู่กับกางเกงขาสั้นเอวผูกสาย สัมผัสลื่นสบายผิวสำหรับพักผ่อนยามค่ำคืน",
+    "source": "default",
+    "keys": [
+      "Silk Satin Pajama Set",
+      "Silk Pajamas",
+      "ชุดนอนผ้าไหมซาตินสองชิ้น",
+      "ชุดนอนผ้าไหม"
+    ]
+  },
+  {
+    "id": "Misc_Oversized_Zip_Hoodie",
+    "name": "Oversized Zip Hoodie",
+    "th_name": "เสื้อฮู้ดดี้ซิปโอเวอร์ไซส์",
+    "category": "Daywear & Misc",
+    "desc": "An oversized soft fleece grey zip hoodie worn long enough to substitute as a mini dress, with the zipper pulled halfway down.",
+    "th_desc": "เสื้อฮู้ดดี้ผ้าฟลีซสีเทาตัวใหญ่พิเศษยาวคลุมสะโพกจนใส่แทนมินิเดรสได้ รูดซิปครึ่งอก แขนเสื้อยาวคลุมมือ ให้ลุคชิลล์ๆ สบายๆ",
+    "source": "default",
+    "keys": [
+      "Baggy Zip-Up Hoodie",
+      "Zip Hoodie",
+      "เสื้อฮู้ดดี้ซิปโอเวอร์ไซส์",
+      "เสื้อฮู้ดดี้"
+    ]
+  },
+  {
+    "id": "Misc_Plaid_School_Blazer",
+    "name": "Plaid School Blazer",
+    "th_name": "เสื้อเบลเซอร์สูทนักเรียน",
+    "category": "Daywear & Misc",
+    "desc": "A tailored navy blue school uniform blazer with brass crest buttons, tartan collar lining, and fitted waistline.",
+    "th_desc": "เสื้อสูทเบลเซอร์เครื่องแบบนักเรียนสีกรมท่าคัตติ้งเข้ารูป ติดกระดุมทองเหลืองปั๊มตราโรงเรียน และปกเสื้อซับในผ้าลายสก็อต",
+    "source": "default",
+    "keys": [
+      "Plaid School Blazer",
+      "School Blazer",
+      "เสื้อเบลเซอร์สูทนักเรียน",
+      "เบลเซอร์นักเรียน"
+    ]
+  },
+  {
+    "id": "Misc_Bathrobe_Sash",
+    "name": "Bathrobe Sash",
+    "th_name": "เสื้อคลุมอาบน้ำผ้าขนหนู",
+    "category": "Daywear & Misc",
+    "desc": "A thick snowy white terrycloth bathrobe casually cinched at the waist with an oversized belt, sliding slightly off one shoulder.",
+    "th_desc": "เสื้อคลุมอาบน้ำผ้าขนหนูสีขาวหนานุ่ม ผูกสายคาดเอวหลวมๆ คอเสื้อเปิดกว้างและเลื่อนหลุดไหล่ข้างหนึ่ง เผยผิวเนียนหลังอาบน้ำเสร็จใหม่ๆ",
+    "source": "default",
+    "keys": [
+      "Plush Terry Bathrobe",
+      "Bathrobe",
+      "เสื้อคลุมอาบน้ำผ้าขนหนู",
+      "เสื้อคลุมอาบน้ำ"
+    ]
+  },
+  {
+    "id": "Misc_Denim_Overalls",
+    "name": "Denim Overalls",
+    "th_name": "ชุดเอี๊ยมยีนส์ขาสั้น",
+    "category": "Daywear & Misc",
+    "desc": "Playful vintage denim shortalls worn with one shoulder strap unbuttoned and hanging loose over a cropped top or bikini.",
+    "th_desc": "ชุดเอี๊ยมกางเกงยีนส์ขาสั้นสไตล์วินเทจ ปลดสายเอี๊ยมข้างหนึ่งทิ้งตัวลงอย่างขี้เล่น สวมทับเสื้อครอปหรือบิกินี่ตัวโปรด",
+    "source": "default",
+    "keys": [
+      "Shortall Denim Overalls",
+      "Denim Overalls",
+      "ชุดเอี๊ยมยีนส์ขาสั้น",
+      "เอี๊ยมยีนส์"
+    ]
+  },
+  {
+    "id": "Misc_Silk_Yukata_Robe",
+    "name": "Silk Yukata Robe",
+    "th_name": "ยูกาตะผ้าไหมคลุมไหล่",
+    "category": "Daywear & Misc",
+    "desc": "A lightweight white cotton yukata printed with indigo morning glories, worn loosely with an uncinched obi belt for summer festival ease.",
+    "th_desc": "ชุดยูกาตะฤดูร้อนผ้าฝ้ายสีขาวพิมพ์ลายดอกมอร์นิ่งกลอรี่สีคราม สวมใส่อย่างสบายๆ โดยคลายสายรัดโอบิ เหมาะกับบรรยากาศงานเทศกาลฤดูร้อน",
+    "source": "default",
+    "keys": [
+      "Floral Summer Yukata",
+      "Summer Yukata",
+      "ยูกาตะผ้าไหมคลุมไหล่",
+      "ยูกาตะฤดูร้อน"
+    ]
+  },
+  {
+    "id": "Misc_Turtleneck_Poncho",
+    "name": "Turtleneck Poncho",
+    "th_name": "ผ้าคลุมปอนโชไหมพรมคอเต่า",
+    "category": "Daywear & Misc",
+    "desc": "A voluminous knit poncho in camel wool featuring an oversized foldover turtleneck collar and fringe tassels swaying with movement.",
+    "th_desc": "ผ้าคลุมปอนโชไหมพรมวูลสีคาเมล คอเต่าพับหนาตัวโต ชายผ้าคลุมทิ้งตัวแต่งพู่ระบายที่แกว่งไหวตามการก้าวเดิน ให้ความอบอุ่นมีสไตล์",
+    "source": "default",
+    "keys": [
+      "Chunky Turtleneck Poncho",
+      "Knit Poncho",
+      "ผ้าคลุมปอนโชไหมพรมคอเต่า",
+      "ผ้าคลุมปอนโช"
+    ]
+  },
+  {
+    "id": "Misc_Faux_Fur_Coat",
+    "name": "Faux Fur Coat",
+    "th_name": "เสื้อโค้ทขนสัตว์เทียมหรูหรา",
+    "category": "Daywear & Misc",
+    "desc": "A plush snowy-white faux-fur long coat draped casually over the shoulders, adding instant Hollywood glamour to any lingerie or outfit.",
+    "th_desc": "เสื้อโค้ทขนสัตว์เทียมหนานุ่มสีขาวราวหิมะ สวมคลุมไหล่แบบสบายๆ เพิ่มความหรูหราสไตล์ดาราฮอลลีวูดให้กับชุดด้านในทันตาเห็น",
+    "source": "default",
+    "keys": [
+      "Glamour Faux-Fur Coat",
+      "Fur Coat",
+      "เสื้อโค้ทขนสัตว์เทียมหรูหรา",
+      "โค้ทขนสัตว์"
+    ]
+  },
+  {
+    "id": "Misc_Ribbed_Sleep_Tank",
+    "name": "Ribbed Sleep Tank",
+    "th_name": "เสื้อกล้ามผ้าริบนอนสบาย",
+    "category": "Daywear & Misc",
+    "desc": "A fitted thin heather grey ribbed cotton tank top with scooped neckline, soft and semi-sheer from frequent washing.",
+    "th_desc": "เสื้อกล้ามผ้าริบคอตตอนสีเทาอ่อน คอกว้างเว้าลึก เนื้อผ้านุ่มบางเบาแนบเนื้อ สวมใส่สบายสำหรับนอนหลับพักผ่อน",
+    "source": "default",
+    "keys": [
+      "Ribbed Cotton Sleep Tank",
+      "Sleep Tank",
+      "เสื้อกล้ามผ้าริบนอนสบาย",
+      "เสื้อกล้าม"
+    ]
+  },
+  {
+    "id": "Misc_Lab_Coat",
+    "name": "Lab Coat",
+    "th_name": "เสื้อกาวน์นักวิจัยสีขาว",
+    "category": "Daywear & Misc",
+    "desc": "A starched white knee-length scientific lab coat worn unbuttoned, billowing open over casual wear or revealing attire.",
+    "th_desc": "เสื้อกาวน์นักวิจัยสีขาวสะอาดความยาวระดับเข่า ปลดกระดุมเปิดกว้าง สะบัดพลิ้วไสวเผยให้เห็นชุดสวยที่สวมอยู่ด้านใน",
+    "source": "default",
+    "keys": [
+      "Scientist Lab Coat",
+      "Lab Coat",
+      "เสื้อกาวน์นักวิจัยสีขาว",
+      "เสื้อกาวน์"
+    ]
+  },
+  {
+    "id": "Misc_Frilly_Chef_Apron",
+    "name": "Frilly Chef Apron",
+    "th_name": "ผ้ากันเปื้อนพ่อครัวกุ๊กกิ๊ก",
+    "category": "Daywear & Misc",
+    "desc": "A sweet pastel pink cotton bib apron trimmed with white eyelet lace ruffles, tied in a neat bow behind the waist.",
+    "th_desc": "ผ้ากันเปื้อนทำครัวผ้าฝ้ายสีชมพูพาสเทล แต่งระบายลูกไม้ฉลุสีขาวรอบตัว ผูกโบว์ด้านหลังอย่างเรียบร้อยน่ารัก",
+    "source": "default",
+    "keys": [
+      "Frilly Kitchen Apron",
+      "Kitchen Apron",
+      "ผ้ากันเปื้อนพ่อครัวกุ๊กกิ๊ก",
+      "ผ้ากันเปื้อน"
+    ]
+  },
+  {
+    "id": "Misc_Velour_Tracksuit",
+    "name": "Velour Tracksuit",
+    "th_name": "ชุดแทร็คสูทผ้ากำมะหยี่",
+    "category": "Daywear & Misc",
+    "desc": "A retro 2000s baby pink velour zip-up hoodie jacket with rhinestone zipper pull and matching low-rise track pants.",
+    "th_desc": "เสื้อแจ็คเก็ตแทร็คสูทผ้ากำมะหยี่สีชมพูเบบี้พิงค์สไตล์ Y2K หัวซิปประดับเพชรคริสตัล สวมใส่เข้าคู่กับกางเกงวอร์มเอวต่ำ",
+    "source": "default",
+    "keys": [
+      "Y2K Velour Tracksuit Jacket",
+      "Velour Tracksuit",
+      "ชุดแทร็คสูทผ้ากำมะหยี่",
+      "แทร็คสูท"
+    ]
+  },
+  {
+    "id": "Misc_Kimono_Cardigan_Haori",
+    "name": "Kimono Cardigan Haori",
+    "th_name": "เสื้อฮาโอริคลุมกิโมโน",
+    "category": "Daywear & Misc",
+    "desc": "A flowing Japanese haori outer jacket in deep crimson silk, adorned with soaring white crane and gold crest patterns.",
+    "th_desc": "เสื้อคลุมฮาโอริผ้าไหมญี่ปุ่นสีแดงเข้ม ชายแขนเสื้อทิ้งกว้าง พิมพ์ลวดลายนกกระเรียนขาวโบยบินและตราประจำตระกูลดิ้นทอง",
+    "source": "default",
+    "keys": [
+      "Silk Haori Cardigan",
+      "Haori",
+      "เสื้อฮาโอริคลุมกิโมโน",
+      "เสื้อฮาโอริ"
+    ]
+  },
+  {
+    "id": "Misc_Leather_Motorcycle_Jacket",
+    "name": "Leather Motorcycle Jacket",
+    "th_name": "แจ็คเก็ตหนังมอเตอร์ไซค์",
+    "category": "Daywear & Misc",
+    "desc": "A heavyweight distressed black cowhide motorcycle jacket featuring asymmetrical front zipper, snap notched lapels, and belted waist.",
+    "th_desc": "เสื้อแจ็คเก็ตหนังแท้สไตล์มอเตอร์ไซค์คลาสสิก ซิปเฉียงด้านหน้า ปกเสื้อติดกระดุมแป๊ก และเข็มขัดคาดเอว ให้กลิ่นอายความเท่ดิบ",
+    "source": "default",
+    "keys": [
+      "Classic Moto Leather Jacket",
+      "Leather Jacket",
+      "แจ็คเก็ตหนังมอเตอร์ไซค์",
+      "แจ็คเก็ตหนัง"
+    ]
+  },
+  {
+    "id": "Misc_Cozy_Cabin_Cardigan",
+    "name": "Cozy Cabin Cardigan",
+    "th_name": "คาร์ดิแกนไหมพรมถักหนานุ่ม",
+    "category": "Daywear & Misc",
+    "desc": "A chunky oversized oatmeal cable-knit cardigan with wooden toggle buttons and deep patch pockets, warm and enveloping.",
+    "th_desc": "เสื้อคาร์ดิแกนไหมพรมถักลายเปียสีข้าวโอ๊ตเนื้อหนานุ่มพิเศษ ติดกระดุมไม้ทรงกระบอก มีกระเป๋าข้างสองข้าง อบอุ่นน่าซุกตัว",
+    "source": "default",
+    "keys": [
+      "Cozy Cable-Knit Cardigan",
+      "Knit Cardigan",
+      "คาร์ดิแกนไหมพรมถักหนานุ่ม",
+      "คาร์ดิแกนไหมพรม"
+    ]
+  },
+  {
+    "id": "State_Torn_Attire",
+    "name": "Torn Attire",
+    "th_name": "เสื้อผ้าขาดจากการต่อสู้",
+    "category": "States & Conditions",
+    "desc": "The current outfit has sustained severe combat battle-damage, shredded along the seams with frayed slashes exposing skin underneath.",
+    "th_desc": "เสื้อผ้าที่สวมใส่ได้รับความเสียหายจากการต่อสู้อย่างหนัก ตะเข็บหลุดลุ่ย รอยขาดเฉือนเว้าแหว่งเผยให้เห็นผิวเนียนด้านในอย่างน่าตื่นเต้น",
+    "source": "default",
+    "keys": [
+      "Battle-Torn Clothing",
+      "Torn Clothes",
+      "เสื้อผ้าขาดจากการต่อสู้",
+      "เสื้อผ้าขาด"
+    ]
+  },
+  {
+    "id": "State_Oil_Sheened",
+    "name": "Oil Sheened",
+    "th_name": "ผิวกายเคลือบออยล์แวววาว",
+    "category": "States & Conditions",
+    "desc": "Bare skin and tight fabrics glisten with a radiant coating of fragrant aromatic massage oil, creating wet glossy highlights under ambient lighting.",
+    "th_desc": "เรือนร่างและผืนผ้าแนบเนื้อเคลือบชโลมด้วยน้ำมันหอมระเหยแวววาว ผิวเนียนเปล่งประกายล้อแสงไฟระยิบระยับ สะท้อนความเย้ายวนทุกการขยับตัว",
+    "source": "default",
+    "keys": [
+      "Glistening Body Oil",
+      "Oiled Body",
+      "ผิวกายเคลือบออยล์แวววาว",
+      "ชโลมออยล์"
+    ]
+  },
+  {
+    "id": "State_Bound_Ribbons",
+    "name": "Bound Ribbons",
+    "th_name": "ผูกมัดด้วยริบบิ้นไหมซาติน",
+    "category": "States & Conditions",
+    "desc": "Soft crimson silk satin ribbons bind the wrists together in front and loop decoratively around the torso in aesthetic Japanese bondage patterns.",
+    "th_desc": "ริบบิ้นผ้าไหมซาตินสีแดงสดพันธนาการข้อมือทั้งสองข้างไว้ด้วยกันด้านหน้า และพาดผ่านเรือนร่างเป็นลวดลายชิบาริสุดประณีต นุ่มนวลแต่ไม่อาจหลุดพ้น",
+    "source": "default",
+    "keys": [
+      "Bound in Satin Ribbons",
+      "Ribbon Bondage",
+      "ผูกมัดด้วยริบบิ้นไหมซาติน",
+      "พันธนาการริบบิ้น"
+    ]
+  },
+  {
+    "id": "State_Dripping_Sweat",
+    "name": "Dripping Sweat",
+    "th_name": "เหงื่อชุ่มกายหลังออกกำลังกาย",
+    "category": "States & Conditions",
+    "desc": "A fine dewy sheen of perspiration clings to the skin, collarbones, and dampens the fabric after intense athletic or emotional exertion.",
+    "th_desc": "หยาดเหงื่อเม็ดละเอียดผุดพรายทั่วเรือนร่างและไหปลาร้า ชโลมเสื้อผ้าจนเปียกชื้นแนบเนื้อหลังผ่านการออกกำลังกายหรือกิจกรรมอันเร่าร้อน",
+    "source": "default",
+    "keys": [
+      "Dripping Post-Workout Sweat",
+      "Sweaty Skin",
+      "เหงื่อชุ่มกายหลังออกกำลังกาย",
+      "เหงื่อท่วมตัว"
+    ]
+  },
+  {
+    "id": "State_Disheveled_Sleepwear",
+    "name": "Disheveled Sleepwear",
+    "th_name": "ชุดนอนหลุดรุ่ยยามตื่นนอน",
+    "category": "States & Conditions",
+    "desc": "The sleepwear is delightfully rumpled and twisted from bedsheets, with one strap slipped down the arm and fabric clinging loosely.",
+    "th_desc": "ชุดนอนบิดย่นหลุดรุ่ยจากการพลิกตัวบนที่นอน สายเสื้อเลื่อนหลุดลงมาข้างแขน ชายกระโปรงเลิกสูง เผยความงดงามไร้เดียงสายามตื่นนอน",
+    "source": "default",
+    "keys": [
+      "Disheveled Sleep State",
+      "Morning Mess",
+      "ชุดนอนหลุดรุ่ยยามตื่นนอน",
+      "สภาพเพิ่งตื่น"
+    ]
+  },
+  {
+    "id": "State_Blindfolded",
+    "name": "Blindfolded",
+    "th_name": "ปิดตาด้วยผ้าไหมซาติน",
+    "category": "States & Conditions",
+    "desc": "A wide black satin ribbon tied securely across the eyes, depriving sight and heightening touch, scent, and auditory sensitivity.",
+    "th_desc": "ผ้าไหมซาตินสีดำขลับผูกปิดทับดวงตาทั้งสองข้างอย่างมิดชิด พรากการมองเห็นและช่วยปลุกเร้าประสาทสัมผัสการได้ยินและการรับรสสัมผัสให้เฉียบคมยิ่งขึ้น",
+    "source": "default",
+    "keys": [
+      "Satin Blindfold",
+      "Blindfolded",
+      "ปิดตาด้วยผ้าไหมซาติน",
+      "ผ้าปิดตา"
+    ]
+  },
+  {
+    "id": "State_Restrained_Handcuffs",
+    "name": "Restrained Handcuffs",
+    "th_name": "มือถูกพันธนาการด้วยกุญแจมือ",
+    "category": "States & Conditions",
+    "desc": "Wrists linked together in front by polished steel or soft velvet-lined cuffs, restricting arm mobility while maintaining poised posture.",
+    "th_desc": "ข้อมือทั้งสองข้างถูกล็อกพันธนาการไว้ด้วยกุญแจมือเหล็กขัดเงาบุกำมะหยี่ จำกัดการเคลื่อนไหวของมือให้อยู่ด้านหน้าอย่างจำยอม",
+    "source": "default",
+    "keys": [
+      "Restrained by Handcuffs",
+      "Handcuffs",
+      "มือถูกพันธนาการด้วยกุญแจมือ",
+      "กุญแจมือ"
+    ]
+  },
+  {
+    "id": "Addon_Heart_Choker",
+    "name": "Heart Choker",
+    "th_name": "ปลอกคอโชคเกอร์หัวใจ",
+    "category": "Add-ons & Modifiers",
+    "desc": "A snug black velvet neck choker centered with a polished rose-gold heart-shaped metal O-ring.",
+    "th_desc": "โชคเกอร์ผ้ากำมะหยี่สีดำกระชับรอบคอ ประดับห่วงโลหะรูปหัวใจสีโรสโกลด์ขัดเงาตรงกลางลำคออย่างโดดเด่น",
+    "source": "default",
+    "keys": [
+      "Heart Ring Velvet Choker",
+      "Heart Choker",
+      "ปลอกคอโชคเกอร์หัวใจ",
+      "โชคเกอร์หัวใจ"
+    ]
+  },
+  {
+    "id": "Addon_Fox_Tail_Ears",
+    "name": "Fox Tail Ears",
+    "th_name": "หูและหางจิ้งจอกขนฟู",
+    "category": "Add-ons & Modifiers",
+    "desc": "A pair of realistic two-tone faux-fur fox ears on a discreet headband, paired with a giant plush fox tail swaying behind.",
+    "th_desc": "ที่คาดผมหูจิ้งจอกขนสัตว์เทียมนุ่มฟูสองสี จับคู่กับพวงหางจิ้งจอกขนาดใหญ่ขนนุ่มฟูที่แกว่งไหวไปมาด้านหลัง",
+    "source": "default",
+    "keys": [
+      "Fluffy Fox Ears & Tail",
+      "Fox Ears",
+      "หูและหางจิ้งจอกขนฟู",
+      "หูจิ้งจอก"
+    ]
+  },
+  {
+    "id": "Addon_Cat_Ears_Paws",
+    "name": "Cat Ears Paws",
+    "th_name": "หูแมวและอุ้งมือแมวนุ่ม",
+    "category": "Add-ons & Modifiers",
+    "desc": "Soft black velvet cat ears with pink inner lining, accompanied by fingerless paw gloves featuring squishy silicone toe beans.",
+    "th_desc": "ที่คาดผมหูแมวผ้ากำมะหยี่สีดำซับในสีชมพู มาพร้อมถุงมืออุ้งเท้าแมวไร้นิ้วแต่งปุ่มอุ้งเท้ายางซิลิโคนนุ่มนิ่มน่าสัมผัส",
+    "source": "default",
+    "keys": [
+      "Velvet Cat Ears & Paws",
+      "Cat Ears",
+      "หูแมวและอุ้งมือแมวนุ่ม",
+      "หูแมว"
+    ]
+  },
+  {
+    "id": "Addon_Bunny_Ears_Cuffs",
+    "name": "Bunny Ears Cuffs",
+    "th_name": "หูกระต่ายและข้อมือทักซิโด้",
+    "category": "Add-ons & Modifiers",
+    "desc": "Tall bendable satin bunny ears mounted on a headband, paired with crisp white French tuxedo wrist cuffs and cufflinks.",
+    "th_desc": "ที่คาดผมหูกระต่ายผ้าซาตินทรงสูงดัดทรงได้ มาพร้อมปลอกข้อมือทักซิโด้สีขาวติดกระดุมข้อมือคัฟลิงค์สไตล์เพลย์บอยบันนี่",
+    "source": "default",
+    "keys": [
+      "Satin Bunny Ears & Cuffs",
+      "Bunny Ears",
+      "หูกระต่ายและข้อมือทักซิโด้",
+      "หูกระต่าย"
+    ]
+  },
+  {
+    "id": "Addon_Body_Chains",
+    "name": "Body Chains",
+    "th_name": "สายโซ่ประดับเรือนร่าง",
+    "category": "Add-ons & Modifiers",
+    "desc": "Delicate gold link chains draping elegantly across the collarbones, crossing beneath the breasts, and encircling the waist.",
+    "th_desc": "สายโซ่ทองคำเส้นละเอียดทิ้งตัวพาดผ่านไหปลาร้า ไขว้ลงมาใต้ราวนม และโอบล้อมรอบเอว ขับเน้นทรวดทรงให้ดูหรูหราเจิดจรัส",
+    "source": "default",
+    "keys": [
+      "Gilded Torso Body Chains",
+      "Body Chains",
+      "สายโซ่ประดับเรือนร่าง",
+      "บอดี้เชน"
+    ]
+  },
+  {
+    "id": "Addon_Leather_Chest_Harness",
+    "name": "Leather Chest Harness",
+    "th_name": "ฮาร์เนสสายรัดอกหนังแท้",
+    "category": "Add-ons & Modifiers",
+    "desc": "A geometric black leather cage harness wrapping under and around the breasts, accented with polished silver rings and buckles.",
+    "th_desc": "สายรัดอกฮาร์เนสหนังแท้สีดำตัดเย็บโครงเรขาคณิตโอบรอบเนินอก เชื่อมต่อด้วยห่วงเงินโอริงและบัคเคิลปรับขนาดได้",
+    "source": "default",
+    "keys": [
+      "Leather Chest Harness",
+      "Chest Harness",
+      "ฮาร์เนสสายรัดอกหนังแท้",
+      "ฮาร์เนส"
+    ]
+  },
+  {
+    "id": "Addon_Lace_Garter_Set",
+    "name": "Lace Garter Set",
+    "th_name": "ชุดการ์เตอร์สายรัดถุงน่อง",
+    "category": "Add-ons & Modifiers",
+    "desc": "A sheer scalloped floral lace waist garter belt with four adjustable satin straps and metal clips designed to hold up stockings.",
+    "th_desc": "เข็มขัดการ์เตอร์ลูกไม้ลายดอกไม้โปร่งบางคาดรอบเอว มาพร้อมสายรัดซาติน 4 เส้นและคลิปโลหะสำหรับยึดติดกับถุงน่อง",
+    "source": "default",
+    "keys": [
+      "Floral Lace Garter Belt",
+      "Garter Belt",
+      "ชุดการ์เตอร์สายรัดถุงน่อง",
+      "สายรัดถุงน่อง"
+    ]
+  },
+  {
+    "id": "Addon_Silk_Arm_Gloves",
+    "name": "Silk Arm Gloves",
+    "th_name": "ถุงมือผ้าไหมยาวถึงข้อศอก",
+    "category": "Add-ons & Modifiers",
+    "desc": "Sleek elbow-length evening gloves crafted from smooth stretch satin, hugging the arms and hands flawlessly.",
+    "th_desc": "ถุงมือราตรียาวเลยข้อศอกทำจากผ้าไหมซาตินเนื้อยืดหยุ่น แนบกระชับกับเรียวมือและท่อนแขนอย่างหมดจด เสริมมาดนางพญา",
+    "source": "default",
+    "keys": [
+      "Opera-Length Silk Gloves",
+      "Opera Gloves",
+      "ถุงมือผ้าไหมยาวถึงข้อศอก",
+      "ถุงมือยาว"
+    ]
+  },
+  {
+    "id": "Addon_Anklet_Bells",
+    "name": "Anklet Bells",
+    "th_name": "กำไลข้อเท้ากระพรวนเงิน",
+    "category": "Add-ons & Modifiers",
+    "desc": "A dainty sterling silver chain anklet strung with miniature polished silver jingle bells that chime softly with every step.",
+    "th_desc": "กำไลข้อเท้าสร้อยเงินแท้เส้นจิ๋วร้อยกระพรวนเงินใบเล็กๆ ส่งเสียงดนตรีไพเราะแผ่วเบาทุกจังหวะการย่างก้าว",
+    "source": "default",
+    "keys": [
+      "Silver Jingle Bell Anklet",
+      "Bell Anklet",
+      "กำไลข้อเท้ากระพรวนเงิน",
+      "กำไลข้อเท้า"
+    ]
+  },
+  {
+    "id": "Addon_Sheer_Veil",
+    "name": "Sheer Veil",
+    "th_name": "ผ้าคลุมหน้าโปร่งแสง",
+    "category": "Add-ons & Modifiers",
+    "desc": "A delicate sheer mesh veil attached to a comb, draping mystically over the eyes and lips with ethereal transparency.",
+    "th_desc": "ผ้าคลุมหน้าผ้าตาข่ายโปร่งแสงติดหวีสับ ทิ้งตัวลงมาบดบังดวงตาและริมฝีปากอย่างลึกลับ ชวนให้ค้นหาและน่าหลงใหล",
+    "source": "default",
+    "keys": [
+      "Translucent Face Veil",
+      "Face Veil",
+      "ผ้าคลุมหน้าโปร่งแสง",
+      "ผ้าคลุมหน้า"
+    ]
+  },
+  {
+    "id": "Addon_Feather_Boa",
+    "name": "Feather Boa",
+    "th_name": "ผ้าพันคอขนนกฟูฟ่อง",
+    "category": "Add-ons & Modifiers",
+    "desc": "A six-foot voluminous pure white ostrich feather boa draped luxuriously across the elbows and shoulders.",
+    "th_desc": "ผ้าพันคอขนนกกระจอกเทศสีขาวบริสุทธิ์หนานุ่มฟูฟ่องยาว 6 ฟุต สวมพาดแขนและไหล่อย่างเลิศหรูสไตล์คาบาเรต์และฮอลลีวูด",
+    "source": "default",
+    "keys": [
+      "Ostrich Feather Boa",
+      "Feather Boa",
+      "ผ้าพันคอขนนกฟูฟ่อง",
+      "ผ้าพันคอขนนก"
+    ]
+  },
+  {
+    "id": "Addon_Nipple_Chains",
+    "name": "Nipple Chains",
+    "th_name": "สายโซ่เชื่อมหน้าอกคริสตัล",
+    "category": "Add-ons & Modifiers",
+    "desc": "Delicate non-piercing silver filigree clamps tipped in silicone, linked across the breast with a sparkling crystal droplet chain.",
+    "th_desc": "เครื่องประดับเรือนร่างแบบหนีบไร้การเจาะหุ้มซิลิโคนนุ่มนวล เชื่อมต่อระหว่างหน้าอกด้วยสายโซ่คริสตัลหยดน้ำระยิบระยับ",
+    "source": "default",
+    "keys": [
+      "Crystal Nipple Clamp Chains",
+      "Body Jewelry",
+      "สายโซ่เชื่อมหน้าอกคริสตัล",
+      "สายโซ่หน้าอก"
+    ]
+  },
+  {
+    "id": "Addon_Pasties_Stars",
+    "name": "Pasties Stars",
+    "th_name": "สติ๊กเกอร์แปะหน้าอกรูปดาว",
+    "category": "Add-ons & Modifiers",
+    "desc": "A pair of iridescent holographic adhesive star pasties designed to add a playful sparkle beneath sheer fabrics.",
+    "th_desc": "สติ๊กเกอร์ซิลิโคนติดหน้าอกรูปดาวโฮโลแกรมประกายสีรุ้ง ออกแบบมาสำหรับใส่ภายใต้ชุดซีทรูโปร่งแสงเพื่อเพิ่มประกายเสน่ห์น่ารัก",
+    "source": "default",
+    "keys": [
+      "Holographic Star Pasties",
+      "Pasties",
+      "สติ๊กเกอร์แปะหน้าอกรูปดาว",
+      "ที่แปะหน้าอก"
     ]
   }
 ];
@@ -1635,7 +3400,7 @@ const UI_STRINGS = {
         aiScan: 'AI Scan Chat',
         aiScanning: 'AI Scanning...',
         sourceAll: 'All Items',
-        sourceDefault: '👑 Default Sets (112)',
+        sourceDefault: '👑 Default Sets (224)',
         sourceImported: '📂 Custom / Imported',
         bookFilter: 'Lorebook Shelf',
         allBooks: 'All Imported Shelves',
@@ -1686,7 +3451,7 @@ const UI_STRINGS = {
         aiScan: 'AI สแกนชุดจากแชท',
         aiScanning: 'AI กำลังวิเคราะห์...',
         sourceAll: 'ทั้งหมด',
-        sourceDefault: '👑 ชุดมาตรฐาน (112)',
+        sourceDefault: '👑 ชุดมาตรฐาน (224)',
         sourceImported: '📂 นำเข้า/แต่งเอง',
         bookFilter: 'ชั้นวางสมุดคอสตูม',
         allBooks: 'สมุดนำเข้าทั้งหมด',
