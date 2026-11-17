@@ -2594,38 +2594,39 @@ function renderItemsGrid() {
         return `
             <div class="pwm-item-card ${isSelected ? 'pwm-selected' : ''}" data-id="${escapeHtml(item.id)}">
                 <div class="pwm-item-header">
-                    <span class="pwm-item-title">
+                    <span class="pwm-item-title" title="${isThai ? 'กดเพื่อสวมใส่ชุดนี้' : 'Click to select this attire'}">
                         ${isSelected ? '<i class="fa-solid fa-circle-check pwm-check-icon"></i>' : ''}
                         <span>${escapeHtml(displayName)}</span>
                     </span>
                     <div class="pwm-item-header-actions">
-                        <button type="button" class="pwm-item-info-btn" data-id="${escapeHtml(item.id)}" title="${isThai ? 'อ่านรายละเอียดทั้งหมด (ตัวหนังสือใหญ่)' : 'Read full details (Large text)'}">
-                            <i class="fa-solid fa-circle-info"></i>
+                        <button type="button" class="pwm-item-info-btn" data-id="${escapeHtml(item.id)}" title="${isThai ? 'เปิดอ่านรายละเอียดฉบับเต็ม (ตัวหนังสือใหญ่)' : 'Inspect Full Details (Large Text Bubble)'}">
+                            <i class="fa-solid fa-circle-info"></i> <span>${isThai ? 'ข้อมูล' : 'Details'}</span>
                         </button>
                         <span class="pwm-item-badge ${badgeClass}">${escapeHtml(badgeLabel)}</span>
                     </div>
                 </div>
                 ${subName ? `<div class="pwm-item-subname">${escapeHtml(subName)}</div>` : ''}
-                <div class="pwm-item-desc ${isSelected ? 'pwm-desc-expanded' : ''}">${escapeHtml(displayDesc)}</div>
-                ${isSelected ? `
-                    <div class="pwm-card-actions">
-                        <button type="button" class="pwm-btn-read-more" data-id="${escapeHtml(item.id)}">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i> ${isThai ? 'เปิดอ่านตัวหนังสือใหญ่ฉบับเต็ม' : 'Read Full Details (Large Text)'}
-                        </button>
-                    </div>
-                ` : ''}
+                <div class="pwm-item-desc" data-id="${escapeHtml(item.id)}" title="${isThai ? 'กดเพื่ออ่านรายละเอียดฉบับเต็ม' : 'Click to read full details'}">${escapeHtml(displayDesc)}</div>
             </div>
         `;
     }).join('');
 
     container.querySelectorAll('.pwm-item-card').forEach(card => {
         card.onclick = (e) => {
-            if (e.target.closest('.pwm-item-info-btn') || e.target.closest('.pwm-btn-read-more')) return;
+            // If user clicked the info button or description text, open the Dedicated Detail Inspector Bubble!
+            if (e.target.closest('.pwm-item-info-btn') || e.target.closest('.pwm-item-desc')) {
+                e.stopPropagation();
+                const itemId = card.dataset.id;
+                const all = getAllOutfitsList();
+                const it = all.find(x => x.id === itemId);
+                if (it) openItemDetailModal(it);
+                return;
+            }
             toggleItemSelection(card.dataset.id);
         };
     });
 
-    container.querySelectorAll('.pwm-item-info-btn, .pwm-btn-read-more').forEach(btn => {
+    container.querySelectorAll('.pwm-item-info-btn').forEach(btn => {
         btn.onclick = (e) => {
             e.stopPropagation();
             const itemId = btn.dataset.id;
@@ -2731,7 +2732,7 @@ function openItemDetailModal(item) {
                 if (!checkIsItemSelected(item)) {
                     toggleItemSelection(item.id);
                 }
-                applyAttireToChatInput();
+                applyOutfitToChat();
                 modal.style.display = 'none';
             };
         }

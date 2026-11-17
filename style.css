@@ -617,18 +617,26 @@
 }
 
 .pwm-item-info-btn {
-    background: transparent;
-    border: none;
+    background: rgba(56, 189, 248, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.3);
     color: #38bdf8;
     cursor: pointer;
-    font-size: 1.05em;
-    padding: 2px 4px;
-    line-height: 1;
+    font-size: 0.74em;
+    padding: 3px 8px;
+    border-radius: 12px;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 4px;
+    gap: 4px;
+    line-height: 1;
+    font-weight: 500;
     transition: all 0.15s ease;
+}
+
+.pwm-item-info-btn:hover {
+    background: rgba(56, 189, 248, 0.25);
+    border-color: #38bdf8;
+    color: #ffffff;
+    transform: scale(1.05);
 }
 
 .pwm-item-info-btn:hover {
@@ -1181,18 +1189,28 @@
     }
 
     .pwm-item-info-btn {
-        background: rgba(56, 189, 248, 0.12) !important;
-        border: 1px solid rgba(56, 189, 248, 0.3) !important;
+        background: rgba(56, 189, 248, 0.16) !important;
+        border: 1px solid rgba(56, 189, 248, 0.4) !important;
         color: #38bdf8 !important;
         cursor: pointer !important;
-        font-size: 0.95em !important;
-        width: 24px !important;
-        height: 24px !important;
-        border-radius: 50% !important;
+        font-size: 0.72em !important;
+        padding: 3px 8px !important;
+        border-radius: 12px !important;
         display: inline-flex !important;
         align-items: center !important;
-        justify-content: center !important;
-        padding: 0 !important;
+        gap: 4px !important;
+        flex-shrink: 0 !important;
+        font-weight: 500 !important;
+        line-height: 1 !important;
+    }
+
+    .pwm-item-info-btn:active {
+        background: rgba(56, 189, 248, 0.35) !important;
+        color: #ffffff !important;
+    }
+
+    .pwm-item-desc {
+        cursor: pointer !important;
     }
 
     .pwm-item-badge {
@@ -1229,12 +1247,7 @@
 
     /* When selected, expands fully with clear, high-contrast readable text */
     .pwm-item-card.pwm-selected .pwm-item-desc {
-        display: block !important;
-        -webkit-line-clamp: unset !important;
-        font-size: 0.86em !important;
         color: #f1f5f9 !important;
-        line-height: 1.55 !important;
-        margin-top: 4px !important;
     }
 
     .pwm-card-actions {
