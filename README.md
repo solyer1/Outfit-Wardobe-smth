@@ -1,7 +1,21 @@
-# Party Wardrobe Manager (PWM) v1.5.0
+# Party Wardrobe Manager (PWM) v1.5.1
 **A Multi-Character RPG Outfit & Costume Manager for SillyTavern / TauriTavern**
 
 ---
+
+### 🚀 What's New in v1.5.1 (Prompt Injection & Active Character Sync Fix)
+- **Active Character Auto-Lock**:
+  - Fixed a critical bug where `Target Character` defaulted to `SillyTavern System` or random library entries.
+  - The extension now automatically locks onto `context.name2` (the active character in your chat, e.g. `Shiki`) whenever the wardrobe is opened or chat changes.
+  - Blacklists `System`, `SillyTavern System`, `You`, and `User` from ever hijacking character slots.
+- **Rich Visual Attire Injection (Dual-Slot)**:
+  - Upgraded prompt injection from bare names (`- Shiki: Bra Panties`) to **rich visual descriptions** pulled directly from the catalog.
+  - Injects at **Position 0 (`IN_PROMPT`)** with an explicit `[VISUAL OVERRIDE]` directive commanding the AI narrator to override default character card outfits (e.g. kimonos/jackets) and describe textures, colors, and cuts.
+  - Injects a parallel **Position 1 (`IN_CHAT` @ depth 2)** OOC scene reminder with `role: 1 (User)` so instruct presets (like Megumin Suite V11) never strip or ignore it.
+- **Pre-Generation Event Hooks**:
+  - Added listeners for `GENERATION_AFTER_COMMANDS` and `GENERATION_STARTED` so prompt injections remain fresh and persistent across every generation turn.
+- **Smart 1-Click "Save & Change Now" Workflow**:
+  - Clicking **"💾 Save to Sheet"** now offers to immediately insert the narrative action tag (`*[Character is wearing Outfit: ...]*`) into the chat input, ensuring the NPC depicts changing clothes in their very next reply while keeping persistent memory active forever.
 
 ### 🌟 What's New in v1.5.0 (224 Default Presets Expanded Catalog)
 - **Doubled the Default Wardrobe**: Added **112 brand-new default presets**, expanding the built-in library from 112 to **224 comprehensive presets** across all 9 categories:

@@ -3421,7 +3421,7 @@ const UI_STRINGS = {
         clearChar: 'Clear Attire',
         clearCharShort: 'Clear',
         noOutfit: 'No outfit selected',
-        partySummary: 'Party Attire Sheet (Persistent Prompt Depth 2):',
+        partySummary: 'Party Attire Sheet (Persistent Prompt & Active Memory):',
         close: 'Close',
         catAll: 'All',
         catSpecialty: 'Specialty Sets',
@@ -3472,7 +3472,7 @@ const UI_STRINGS = {
         clearChar: 'ล้างชุดออก',
         clearCharShort: 'ล้างชุด',
         noOutfit: 'ยังไม่ได้เลือกชุด',
-        partySummary: 'ตารางบันทึกชุดปาร์ตี้ (ฉีดเข้า Prompt อัตโนมัติที่ Depth 2):',
+        partySummary: 'ตารางบันทึกชุดปาร์ตี้ (บันทึกความจำและฉีดเข้า Prompt อัตโนมัติ):',
         close: 'ปิด',
         catAll: 'ทั้งหมด',
         catSpecialty: 'ชุดพิเศษ/คอสเพลย์',
@@ -3536,7 +3536,16 @@ function loadState() {
         const raw = localStorage.getItem(STORAGE_KEY);
         if (raw) {
             const parsed = JSON.parse(raw);
-            if (parsed.wardrobes) state.wardrobes = parsed.wardrobes;
+            if (parsed.wardrobes) {
+                state.wardrobes = parsed.wardrobes;
+                // Clean any accidental system/user keys from wardrobes
+                for (const k of Object.keys(state.wardrobes)) {
+                    const low = k.toLowerCase();
+                    if (low === 'system' || low.includes('sillytavern system') || low === 'you' || low === 'user') {
+                        delete state.wardrobes[k];
+                    }
+                }
+            }
             if (parsed.enableInjection !== undefined) state.enableInjection = parsed.enableInjection;
         }
 
@@ -3580,39 +3589,107 @@ function saveState() {
     updatePromptInjection();
 }
 
+function findItemDetails(itemName) {
+    if (!itemName) return null;
+    const lower = String(itemName).toLowerCase().trim();
+    for (const it of EMBEDDED_CATALOG) {
+        if (String(it.name).toLowerCase().trim() === lower || it.th_name === itemName) return it;
+    }
+    if (state.importedBooks) {
+        for (const list of Object.values(state.importedBooks)) {
+            if (Array.isArray(list)) {
+                for (const it of list) {
+                    if (String(it.name).toLowerCase().trim() === lower || it.th_name === itemName) return it;
+                }
+            }
+        }
+    }
+    return null;
+}
+
 function updatePromptInjection() {
-    if (!state.enableInjection) return;
     const ctx = getSillyContext();
     if (!ctx || !ctx.setExtensionPrompt) return;
 
-    const chars = Object.keys(state.wardrobes);
-    if (!chars.length) {
-        ctx.setExtensionPrompt(EXTENSION_KEY, '', 1, 2, false, 0);
+    if (!state.enableInjection) {
+        try {
+            ctx.setExtensionPrompt(EXTENSION_KEY, '', 0, 0, false, 0);
+            ctx.setExtensionPrompt(EXTENSION_KEY + '_chat', '', 1, 2, false, 1);
+        } catch {}
         return;
     }
 
-    const lines = [
-        '[CURRENT PARTY ATTIRE & VISUAL APPEARANCE]',
-        'Important: The characters are currently dressed in the following outfits. Adhere strictly to these clothing states in all descriptions and actions:'
+    // Filter characters with at least one equipped item, excluding any system/user noise
+    const validChars = Object.keys(state.wardrobes).filter(c => {
+        if (!c) return false;
+        const low = c.toLowerCase();
+        if (low === 'system' || low.includes('sillytavern system') || low === 'you' || low === 'user') return false;
+        const w = state.wardrobes[c];
+        return w && (w.main || w.top || w.bottom || w.legwear || (w.modifiers && w.modifiers.length));
+    });
+
+    if (!validChars.length) {
+        try {
+            ctx.setExtensionPrompt(EXTENSION_KEY, '', 0, 0, false, 0);
+            ctx.setExtensionPrompt(EXTENSION_KEY + '_chat', '', 1, 2, false, 1);
+        } catch {}
+        return;
+    }
+
+    const isThai = state.currentLang === 'th';
+
+    // 1. Build Rich In-Prompt Injection (Position 0 = IN_PROMPT, permanent system prompt level alongside character cards)
+    const promptLines = [
+        '[CURRENT PARTY ATTIRE & VISUAL OVERRIDE]',
+        'CRITICAL VISUAL DIRECTIVE: The character(s) below are currently wearing the following specific attire. In all dialogue, actions, sensory details, and narrative descriptions, you MUST strictly depict them in this attire. Disregard default character card clothing (e.g. kimonos, jackets, uniforms) unless explicitly changed in the ongoing scene:'
     ];
 
-    for (const char of chars) {
-        const w = state.wardrobes[char];
-        const pieces = [];
-        if (w.main) pieces.push(w.main);
-        if (w.top) pieces.push(w.top);
-        if (w.bottom) pieces.push(w.bottom);
-        if (w.legwear) pieces.push(w.legwear);
-        if (w.modifiers && w.modifiers.length) pieces.push(...w.modifiers);
+    const chatNotes = [];
 
-        if (pieces.length) {
-            lines.push(`- ${char}: ${pieces.join(', ')}`);
+    for (const char of validChars) {
+        const w = state.wardrobes[char];
+        const pieceEntries = [];
+
+        if (w.main) pieceEntries.push({ slot: isThai ? 'ชุดหลัก' : 'Main Attire', name: w.main });
+        if (w.top) pieceEntries.push({ slot: isThai ? 'ท่อนบน' : 'Top', name: w.top });
+        if (w.bottom) pieceEntries.push({ slot: isThai ? 'ท่อนล่าง' : 'Bottom', name: w.bottom });
+        if (w.legwear) pieceEntries.push({ slot: isThai ? 'ถุงน่อง/ขา' : 'Legwear', name: w.legwear });
+        if (w.modifiers && Array.isArray(w.modifiers)) {
+            w.modifiers.forEach(m => pieceEntries.push({ slot: isThai ? 'อุปกรณ์เสริม' : 'Accessory/Modifier', name: m }));
+        }
+
+        if (pieceEntries.length) {
+            promptLines.push(`\n### ${char}:`);
+            const itemNames = [];
+            for (const p of pieceEntries) {
+                itemNames.push(p.name);
+                const item = findItemDetails(p.name);
+                const desc = (isThai && item?.th_desc) ? item.th_desc : (item?.desc || '');
+                if (desc) {
+                    promptLines.push(`- **${p.name}** (${p.slot}): ${desc}`);
+                } else {
+                    promptLines.push(`- **${p.name}** (${p.slot})`);
+                }
+            }
+            chatNotes.push(`${char} is wearing [${itemNames.join(' + ')}]`);
         }
     }
 
-    lines.push('[End Current Party Attire]');
-    const promptText = lines.join('\n');
-    ctx.setExtensionPrompt(EXTENSION_KEY, promptText, 1, 2, false, 0);
+    promptLines.push('\n[MANDATORY: Consistently describe physical, tactile, and visual interactions with these garments.]');
+    promptLines.push('[End Current Party Attire]');
+
+    const promptText = promptLines.join('\n');
+
+    try {
+        // Slot 1: Position 0 = IN_PROMPT (Permanent system prompt level, survives all preset formats)
+        ctx.setExtensionPrompt(EXTENSION_KEY, promptText, 0, 0, false, 0);
+
+        // Slot 2: Position 1 = IN_CHAT at Depth 2 with Role 1 (User / Narration role so modern LLMs don't ignore it)
+        const chatNoteText = `[OOC Scene Note: The characters are currently dressed in: ${chatNotes.join('; ')}. Reflect their appearance and clothing state immediately in the scene.]`;
+        ctx.setExtensionPrompt(EXTENSION_KEY + '_chat', chatNoteText, 1, 2, false, 1);
+    } catch (e) {
+        console.error('[Party Wardrobe Manager] Error updating prompt injection:', e);
+    }
 }
 
 /**
@@ -3769,42 +3846,71 @@ function getAllOutfitsList() {
 function detectCharacters() {
     const chars = new Set();
     const ctx = getSillyContext();
+    const blacklist = ['system', 'sillytavern system', 'you', 'user', 'assistant', 'narrator'];
 
-    if (ctx?.characterId !== undefined && ctx.characters && ctx.characters[ctx.characterId]) {
-        const c = ctx.characters[ctx.characterId];
-        const name = c.name || (typeof c === 'string' ? c : '');
-        if (name) chars.add(name);
-    }
+    const isBlocked = (str) => {
+        if (!str || typeof str !== 'string') return true;
+        const low = str.trim().toLowerCase();
+        return blacklist.some(b => low === b || low.includes('sillytavern system'));
+    };
 
-    if (ctx?.name2) chars.add(ctx.name2);
-
-    if (Array.isArray(ctx?.characters)) {
-        for (const c of ctx.characters) {
-            const name = c?.name || (typeof c === 'string' ? c : '');
-            if (name) chars.add(name);
+    // 1. Current active chat character (highest priority!)
+    let activeCharName = '';
+    if (ctx?.name2 && typeof ctx.name2 === 'string') {
+        const n = ctx.name2.trim();
+        if (!isBlocked(n)) {
+            activeCharName = n;
+            chars.add(n);
         }
     }
 
+    // 2. Character from characterId
+    if (ctx?.characterId !== undefined && ctx.characters && ctx.characters[ctx.characterId]) {
+        const c = ctx.characters[ctx.characterId];
+        const name = (c.name || (typeof c === 'string' ? c : '')).trim();
+        if (!isBlocked(name)) {
+            if (!activeCharName) activeCharName = name;
+            chars.add(name);
+        }
+    }
+
+    // 3. Characters in recent chat messages
     if (Array.isArray(ctx?.chat)) {
         const recent = ctx.chat.slice(-30);
         for (const m of recent) {
-            if (m.name && !m.is_user && m.name !== 'System' && m.name.length < 35) {
-                chars.add(m.name);
+            if (m.name && !m.is_user && typeof m.name === 'string') {
+                const trimmed = m.name.trim();
+                if (trimmed.length > 0 && trimmed.length < 35 && !isBlocked(trimmed)) {
+                    chars.add(trimmed);
+                }
             }
         }
     }
 
+    // 4. Characters with registered wardrobes
     for (const c of Object.keys(state.wardrobes)) {
-        chars.add(c);
+        if (!isBlocked(c)) {
+            chars.add(c);
+        }
     }
 
-    chars.delete('System');
-    chars.delete('You');
-    chars.delete('User');
+    // Remove any blacklisted remnant
+    for (const item of Array.from(chars)) {
+        if (isBlocked(item)) {
+            chars.delete(item);
+        }
+    }
 
     state.characters = Array.from(chars);
-    if (!state.activeCharacter && state.characters.length > 0) {
-        state.activeCharacter = state.characters[0];
+
+    // CRITICAL: Always synchronize with the active chat character!
+    if (activeCharName) {
+        state.activeCharacter = activeCharName;
+        if (!state.characters.includes(activeCharName)) {
+            state.characters.unshift(activeCharName);
+        }
+    } else if (!state.activeCharacter || isBlocked(state.activeCharacter)) {
+        state.activeCharacter = state.characters[0] || '';
     }
 }
 
@@ -4608,19 +4714,26 @@ function applyOutfitToChat() {
     if (!textarea) return;
 
     const tag = `*[${char}] is wearing [Outfit: ${list.join(' + ')}]*\n`;
-    if (textarea.value) {
-        textarea.value = tag + textarea.value;
-    } else {
-        textarea.value = tag;
+    if (!textarea.value.includes(tag.trim())) {
+        textarea.value = tag + (textarea.value || '');
+        textarea.dispatchEvent(new Event('input', { bubbles: true }));
     }
 
-    textarea.dispatchEvent(new Event('input', { bubbles: true }));
     closeWardrobeModal();
 }
 
 function saveAttireToParty() {
     const char = state.activeCharacter;
-    if (!char) return;
+    if (!char) {
+        alert(state.currentLang === 'th' ? 'กรุณาเลือกตัวละครเป้าหมาย' : 'Please select a target character.');
+        return;
+    }
+
+    const list = getCompiledSelectionList();
+    if (!list.length) {
+        alert(state.currentLang === 'th' ? 'กรุณาเลือกชุดหรือชิ้นส่วนเสื้อผ้าอย่างน้อย 1 ชิ้น' : 'Please select at least one outfit item.');
+        return;
+    }
 
     state.wardrobes[char] = {
         main: state.selectedMain || '',
@@ -4632,10 +4745,17 @@ function saveAttireToParty() {
 
     saveState();
     renderPartySummary();
-    const alertMsg = state.currentLang === 'th'
-        ? `บันทึกชุดของ ${char} เรียบร้อย! AI จะจำชุดนี้ไว้ตลอดใน Party Attire Sheet ที่ depth 2`
-        : `Saved ${char}'s attire! The AI will now remember this outfit in the party sheet.`;
-    alert(alertMsg);
+
+    const isThai = state.currentLang === 'th';
+    const confirmPrompt = isThai
+        ? `✅ บันทึกชุดของ [${char}] ลงใน Party Attire Sheet เรียบร้อย!\n\n💡 ต้องการใส่แอ็กชันเปลี่ยนชุดลงในช่องแชททันทีด้วยไหม?\n(จะพิมพ์ *[${char} is wearing...]* ลงในช่องแชทให้ทันที เพื่อให้ ${char} บรรยายการเปลี่ยนชุดในข้อความถัดไป)`
+        : `✅ Saved [${char}]'s attire to the persistent party sheet!\n\n💡 Would you also like to insert the outfit change action into chat now?\n(Automatically prepends *[${char} is wearing...]* to chat so ${char} immediately depicts changing clothes in their next reply)`;
+
+    if (confirm(confirmPrompt)) {
+        applyOutfitToChat();
+    } else {
+        closeWardrobeModal();
+    }
 }
 
 function clearCharacterAttire() {
@@ -4656,6 +4776,21 @@ function clearCharacterAttire() {
 }
 
 function openWardrobeModal() {
+    detectCharacters();
+    const ctx = getSillyContext();
+    if (ctx?.name2 && typeof ctx.name2 === 'string') {
+        const n = ctx.name2.trim();
+        const blacklist = ['system', 'sillytavern system', 'you', 'user', 'assistant', 'narrator'];
+        if (n && !blacklist.some(b => n.toLowerCase().includes(b))) {
+            state.activeCharacter = n;
+            if (!state.characters.includes(n)) {
+                state.characters.unshift(n);
+            }
+        }
+    }
+    if (state.activeCharacter) {
+        loadCharacterAttireIntoSelection(state.activeCharacter);
+    }
     renderModal();
     const backdrop = document.getElementById('pwm-modal-backdrop');
     if (backdrop) backdrop.classList.add('pwm-open');
@@ -4787,18 +4922,35 @@ export function init() {
     if (!state.initialized) {
         state.initialized = true;
         loadState();
-        console.log('[Party Wardrobe Manager] v1.4.1 initialized (Default EN + Saved Preferences + Split Shelves + ST World Info + Full Thai Descs).');
+        detectCharacters();
+        console.log('[Party Wardrobe Manager] v1.5.1 initialized (Auto Character Lock + Rich Visual Prompt Injection + Scene Action Sync).');
 
         const ctx = getSillyContext();
         if (ctx?.eventSource && ctx.event_types) {
+            // Guarantee fresh prompt injection before each generation
+            if (ctx.event_types.GENERATION_AFTER_COMMANDS) {
+                ctx.eventSource.on(ctx.event_types.GENERATION_AFTER_COMMANDS, () => {
+                    updatePromptInjection();
+                });
+            }
+            if (ctx.event_types.GENERATION_STARTED) {
+                ctx.eventSource.on(ctx.event_types.GENERATION_STARTED, () => {
+                    updatePromptInjection();
+                });
+            }
+
             ctx.eventSource.on(ctx.event_types.CHAT_CHANGED, () => {
                 setTimeout(() => {
+                    detectCharacters();
                     injectUIElements();
                     updatePromptInjection();
                 }, 300);
             });
             ctx.eventSource.on(ctx.event_types.CHARACTER_PAGE_LOADED, () => {
-                setTimeout(injectUIElements, 300);
+                setTimeout(() => {
+                    detectCharacters();
+                    injectUIElements();
+                }, 300);
             });
             ctx.eventSource.on(ctx.event_types.WORLDINFO_UPDATED, () => {
                 setTimeout(injectUIElements, 300);
