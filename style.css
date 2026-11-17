@@ -607,6 +607,166 @@
     font-style: italic;
 }
 
+
+/* Outfit Detail Inspector Modal (Large Readable Bubble) */
+.pwm-item-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.pwm-item-info-btn {
+    background: transparent;
+    border: none;
+    color: #38bdf8;
+    cursor: pointer;
+    font-size: 1.05em;
+    padding: 2px 4px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.15s ease;
+}
+
+.pwm-item-info-btn:hover {
+    color: #7dd3fc;
+    background: rgba(56, 189, 248, 0.15);
+    transform: scale(1.1);
+}
+
+.pwm-btn-read-more {
+    margin-top: 6px;
+    width: 100%;
+    background: rgba(56, 189, 248, 0.08);
+    border: 1px dashed rgba(56, 189, 248, 0.35);
+    color: #38bdf8;
+    padding: 6px 10px;
+    font-size: 0.78em;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.15s ease;
+}
+
+.pwm-btn-read-more:hover {
+    background: rgba(56, 189, 248, 0.18);
+    border-color: #38bdf8;
+}
+
+.pwm-detail-bubble-content {
+    background: #090d18 !important;
+    border: 1.5px solid rgba(244, 114, 182, 0.4) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.98), 0 0 30px rgba(236, 72, 153, 0.25) !important;
+    width: 92% !important;
+    max-width: 520px !important;
+    max-height: 85vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    color: #f1f5f9 !important;
+}
+
+.pwm-detail-meta {
+    padding: 10px 16px !important;
+    background: #070a12 !important;
+    border-bottom: 1px solid #172033 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    align-items: center !important;
+}
+
+.pwm-detail-tag {
+    font-size: 0.76em !important;
+    background: #141c2e !important;
+    color: #94a3b8 !important;
+    border: 1px solid #1e293b !important;
+    padding: 3px 8px !important;
+    border-radius: 6px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+}
+
+.pwm-detail-tag.pwm-detail-source {
+    background: rgba(236, 72, 153, 0.15) !important;
+    color: #f472b6 !important;
+    border-color: rgba(236, 72, 153, 0.35) !important;
+}
+
+.pwm-detail-tag.pwm-detail-wearing {
+    background: rgba(52, 211, 153, 0.15) !important;
+    color: #34d399 !important;
+    border-color: rgba(52, 211, 153, 0.35) !important;
+}
+
+.pwm-detail-body {
+    flex: 1 !important;
+    overflow-y: auto !important;
+    padding: 16px 18px !important;
+    background: #090d17 !important;
+    user-select: text !important;
+}
+
+.pwm-detail-text {
+    font-size: 0.96em !important;
+    line-height: 1.65 !important;
+    color: #e2e8f0 !important;
+}
+
+.pwm-detail-text p {
+    margin: 0 0 12px 0 !important;
+}
+
+.pwm-detail-keywords {
+    margin-top: 14px !important;
+    padding-top: 10px !important;
+    border-top: 1px solid #172033 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    align-items: center !important;
+}
+
+.pwm-detail-kw-label {
+    font-size: 0.75em !important;
+    color: #64748b !important;
+    margin-right: 4px !important;
+}
+
+.pwm-detail-kw-chip {
+    font-size: 0.72em !important;
+    background: #111726 !important;
+    color: #94a3b8 !important;
+    border: 1px solid #1a2336 !important;
+    padding: 2px 7px !important;
+    border-radius: 4px !important;
+}
+
+.pwm-detail-actions {
+    padding: 10px 14px !important;
+    background: #080c14 !important;
+    border-top: 1px solid #172033 !important;
+    display: flex !important;
+    gap: 8px !important;
+}
+
+.pwm-detail-actions .pwm-btn {
+    flex: 1 !important;
+    padding: 10px 8px !important;
+    font-size: 0.84em !important;
+    justify-content: center !important;
+    border-radius: 8px !important;
+}
+
 /* Sub-modal for ST World Info Browser */
 .pwm-submodal {
     position: absolute;
@@ -731,24 +891,51 @@
 }
 
 /* ==========================================================================
-   MOBILE RESPONSIVENESS (< 768px)
+   MOBILE RESPONSIVENESS (< 768px) - FLOATING BUBBLE GUI & READABLE DETAILS
    ========================================================================== */
 @media (max-width: 768px) {
-    .pwm-modal {
+    /* Floating Bubble Backdrop: Padding around edges so backdrop tap closes modal */
+    .pwm-modal-backdrop {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
         width: 100vw !important;
-        height: 100% !important;
-        max-height: 100dvh !important;
-        border-radius: 0 !important;
-        border: none !important;
-        box-shadow: none !important;
+        height: 100vh !important;
+        background: rgba(0, 0, 0, 0.78) !important;
+        backdrop-filter: blur(8px) !important;
+        -webkit-backdrop-filter: blur(8px) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 14px 10px !important;
+        box-sizing: border-box !important;
+        z-index: 99999 !important;
+    }
+
+    /* Floating Bubble Modal Window: Distinct curved bubble with clear margins */
+    .pwm-modal {
+        width: 95vw !important;
+        max-width: 440px !important;
+        height: 86vh !important;
+        max-height: 86dvh !important;
+        border-radius: 20px !important;
+        border: 1.5px solid rgba(244, 114, 182, 0.45) !important;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.95), 0 0 25px rgba(236, 72, 153, 0.22) !important;
+        background: #07090e !important;
+        margin: auto !important;
+        overflow: hidden !important;
+        display: flex !important;
+        flex-direction: column !important;
+        position: relative !important;
     }
 
     .pwm-header {
-        padding: 6px 10px !important;
+        padding: 8px 10px !important;
         gap: 6px !important;
         flex-shrink: 0 !important;
         background: #080c14 !important;
         border-bottom: 1px solid #171f30 !important;
+        align-items: center !important;
     }
 
     .pwm-title {
@@ -777,12 +964,34 @@
     #pwm-lang-select {
         padding: 3px 6px !important;
         font-size: 0.72em !important;
-        height: 26px !important;
+        height: 28px !important;
     }
 
+    /* Easy-to-click circular exit button on mobile */
     .pwm-close-btn {
-        font-size: 1.2em !important;
-        padding: 2px 4px !important;
+        width: 32px !important;
+        height: 32px !important;
+        min-width: 32px !important;
+        border-radius: 50% !important;
+        background: rgba(239, 68, 68, 0.16) !important;
+        color: #fca5a5 !important;
+        border: 1px solid rgba(248, 113, 113, 0.35) !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 1.1em !important;
+        cursor: pointer !important;
+        flex-shrink: 0 !important;
+        padding: 0 !important;
+        margin-left: 2px !important;
+        transition: all 0.15s ease !important;
+    }
+
+    .pwm-close-btn:hover,
+    .pwm-close-btn:active {
+        background: rgba(239, 68, 68, 0.35) !important;
+        color: #ffffff !important;
+        transform: scale(1.08) !important;
     }
 
     .pwm-source-bar {
@@ -888,7 +1097,7 @@
         flex-shrink: 0 !important;
     }
 
-    /* Outfits Container on Mobile: Vertical flex stack instead of grid to prevent track-collapse bugs */
+    /* Outfits Container on Mobile */
     .pwm-content {
         display: flex !important;
         flex-direction: column !important;
@@ -900,13 +1109,13 @@
         background: #05070c !important;
     }
 
-    /* Outfit Card on Mobile: Generous height, crisp text, zero squashing */
+    /* Outfit Card on Mobile: Clear typography, auto expansion when selected */
     .pwm-item-card {
         padding: 10px 12px !important;
         min-height: 64px !important;
         height: auto !important;
         box-sizing: border-box !important;
-        border-radius: 8px !important;
+        border-radius: 10px !important;
         border: 1px solid #172033 !important;
         background: #0b101a !important;
         display: flex !important;
@@ -924,7 +1133,7 @@
     .pwm-item-card.pwm-selected {
         border-color: #f472b6 !important;
         background: rgba(236, 72, 153, 0.14) !important;
-        box-shadow: 0 0 10px rgba(236, 72, 153, 0.25) !important;
+        box-shadow: 0 0 12px rgba(236, 72, 153, 0.28) !important;
     }
 
     .pwm-item-header {
@@ -964,6 +1173,28 @@
         flex-shrink: 0 !important;
     }
 
+    .pwm-item-header-actions {
+        display: flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .pwm-item-info-btn {
+        background: rgba(56, 189, 248, 0.12) !important;
+        border: 1px solid rgba(56, 189, 248, 0.3) !important;
+        color: #38bdf8 !important;
+        cursor: pointer !important;
+        font-size: 0.95em !important;
+        width: 24px !important;
+        height: 24px !important;
+        border-radius: 50% !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important;
+    }
+
     .pwm-item-badge {
         font-size: 0.68em !important;
         padding: 2px 6px !important;
@@ -982,10 +1213,11 @@
         white-space: nowrap !important;
     }
 
+    /* Clean, readable description: 2-line preview by default */
     .pwm-item-desc {
-        font-size: 0.78em !important;
+        font-size: 0.82em !important;
         color: #94a3b8 !important;
-        line-height: 1.38 !important;
+        line-height: 1.42 !important;
         margin-top: 2px !important;
         display: -webkit-box !important;
         -webkit-box-orient: vertical !important;
@@ -995,9 +1227,34 @@
         word-break: break-word !important;
     }
 
+    /* When selected, expands fully with clear, high-contrast readable text */
     .pwm-item-card.pwm-selected .pwm-item-desc {
-        -webkit-line-clamp: 6 !important;
-        color: #e2e8f0 !important;
+        display: block !important;
+        -webkit-line-clamp: unset !important;
+        font-size: 0.86em !important;
+        color: #f1f5f9 !important;
+        line-height: 1.55 !important;
+        margin-top: 4px !important;
+    }
+
+    .pwm-card-actions {
+        margin-top: 4px !important;
+    }
+
+    .pwm-btn-read-more {
+        width: 100% !important;
+        background: rgba(56, 189, 248, 0.1) !important;
+        border: 1px dashed rgba(56, 189, 248, 0.4) !important;
+        color: #38bdf8 !important;
+        padding: 6px 10px !important;
+        font-size: 0.76em !important;
+        font-weight: 500 !important;
+        border-radius: 6px !important;
+        cursor: pointer !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 6px !important;
     }
 
     .pwm-footer {
@@ -1017,22 +1274,23 @@
     }
 
     .pwm-party-summary {
-        display: none !important; /* Hide deep prompt bar on mobile to maximize card view */
+        display: none !important;
     }
 
+    /* Action row with Clear, Save, Apply, and Exit buttons side-by-side */
     .pwm-action-buttons {
         display: flex !important;
         flex-direction: row !important;
         flex-wrap: nowrap !important;
-        gap: 6px !important;
+        gap: 5px !important;
         align-items: center !important;
         width: 100% !important;
     }
 
     #pwm-clear-btn {
-        flex: 0 0 38px !important;
-        width: 38px !important;
-        height: 38px !important;
+        flex: 0 0 34px !important;
+        width: 34px !important;
+        height: 36px !important;
         padding: 0 !important;
         display: inline-flex !important;
         align-items: center !important;
@@ -1047,9 +1305,9 @@
     #pwm-save-party-btn {
         flex: 1 1 0 !important;
         min-width: 0 !important;
-        height: 38px !important;
-        padding: 0 8px !important;
-        font-size: 0.78em !important;
+        height: 36px !important;
+        padding: 0 6px !important;
+        font-size: 0.76em !important;
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -1061,9 +1319,9 @@
     #pwm-apply-chat-btn {
         flex: 1 1 0 !important;
         min-width: 0 !important;
-        height: 38px !important;
-        padding: 0 8px !important;
-        font-size: 0.78em !important;
+        height: 36px !important;
+        padding: 0 6px !important;
+        font-size: 0.76em !important;
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -1072,14 +1330,32 @@
         text-overflow: ellipsis !important;
     }
 
+    #pwm-footer-close-btn {
+        flex: 0 0 34px !important;
+        width: 34px !important;
+        height: 36px !important;
+        padding: 0 !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        color: #fca5a5 !important;
+        border-color: rgba(248, 113, 113, 0.35) !important;
+        background: rgba(239, 68, 68, 0.15) !important;
+    }
+
+    #pwm-footer-close-btn .pwm-btn-text {
+        display: none !important;
+    }
+
+    /* Submodal bubbles */
     .pwm-submodal {
-        padding: 8px !important;
+        padding: 10px !important;
     }
 
     .pwm-submodal-content {
         max-width: 100% !important;
-        max-height: 92vh !important;
-        border-radius: 8px !important;
+        max-height: 86vh !important;
+        border-radius: 16px !important;
     }
 
     .pwm-st-books-list {

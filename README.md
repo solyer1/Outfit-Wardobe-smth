@@ -1,7 +1,21 @@
-# Party Wardrobe Manager (PWM) v1.4.1
+# Party Wardrobe Manager (PWM) v1.4.2
 **A Multi-Character RPG Outfit & Costume Manager for SillyTavern / TauriTavern**
 
 ---
+
+### 🫧 What's New in v1.4.2 (Floating Bubble GUI & Detail Inspector)
+- **Floating Bubble Mobile Window**:
+  - The modal no longer consumes 100vw/100vh. It now renders as an elegant **floating bubble modal** (95vw / 86vh, 20px curved corners, glowing pink accent border) with clear backdrop margins all around.
+  - **3 Easy Ways to Exit**:
+    1. Tap anywhere on the dark blurred backdrop outside the floating bubble.
+    2. Tap the enlarged 32px circular ✕ button at the top-right header (safely inset from screen bezels/notches).
+    3. Tap the quick [ ✕ ปิด / Exit ] button in the bottom action bar.
+- **Outfit Detail Inspector Modal (Large Readable Text)**:
+  - Solved mobile reading issues: Added a dedicated **Detail Bubble Inspector** (ℹ️ button on every card, or [ 🔍 เปิดอ่านตัวหนังสือใหญ่ฉบับเต็ม ] on selected cards).
+  - Displays the complete unabridged description in large, crisp, high-contrast typography (15px, line-height 1.65, #f1f5f9), separated into clean paragraphs with keyword chips.
+  - Includes direct action buttons: [ ✨ Select This Attire ], [ ✈ Apply to Chat ], and [ ✕ Close ].
+- **Inline Card Auto-Expansion**:
+  - Tapping any card in the list directly expands its description (-webkit-line-clamp: unset), allowing users to read the full text right inside the list without truncation.
 
 ### 📱 What's New in v1.4.1 (Mobile UX & Layout Overhaul)
 - **Eliminated Card Text Collisions**: Added 2-line WebKit text clamping to outfit descriptions with auto card height, completely fixing text overflowing onto adjacent cards.

@@ -1667,7 +1667,11 @@ const UI_STRINGS = {
         catLegwear: 'Legwear',
         catDaywear: 'Daywear & Misc',
         catStates: 'States & Conditions',
-        catAddons: 'Add-ons & Modifiers'
+        catAddons: 'Add-ons & Modifiers',
+        detailTitle: 'Outfit Details',
+        readFullDetail: 'Read Full Details',
+        selectAttire: 'Select This Attire',
+        deselectAttire: 'Deselect Attire'
     },
     th: {
         title: 'ระบบตู้เสื้อผ้าและคอสตูมปาร์ตี้ (Wardrobe Manager)',
@@ -2204,7 +2208,7 @@ function renderModal() {
                         <option value="en" ${state.currentLang === 'en' ? 'selected' : ''}>🇬🇧 EN</option>
                         <option value="th" ${state.currentLang === 'th' ? 'selected' : ''}>🇹🇭 ไทย</option>
                     </select>
-                    <button type="button" class="pwm-close-btn" id="pwm-close-btn" title="${t('close')}">&times;</button>
+                    <button type="button" class="pwm-close-btn" id="pwm-close-btn" title="${t('close')}"><i class="fa-solid fa-xmark"></i></button>
                 </div>
             </div>
 
@@ -2288,6 +2292,9 @@ function renderModal() {
                     <button type="button" class="pwm-btn pwm-btn-primary" id="pwm-apply-chat-btn" title="${t('applyChat')}">
                         <i class="fa-solid fa-paper-plane"></i> <span class="pwm-btn-text">${t('applyChatShort')}</span>
                     </button>
+                    <button type="button" class="pwm-btn pwm-btn-secondary pwm-footer-exit-btn" id="pwm-footer-close-btn" title="${t('close')}">
+                        <i class="fa-solid fa-xmark"></i> <span class="pwm-btn-text">${t('close')}</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -2307,6 +2314,19 @@ function renderModal() {
                 </div>
             </div>
         </div>
+
+        <!-- Outfit Detail Inspector Modal (Large Readable Bubble) -->
+        <div id="pwm-item-detail-modal" class="pwm-submodal" style="display: none;">
+            <div class="pwm-submodal-content pwm-detail-bubble-content">
+                <div class="pwm-submodal-header">
+                    <h3 id="pwm-detail-title"><i class="fa-solid fa-shirt"></i> <span>Outfit Details</span></h3>
+                    <button type="button" class="pwm-submodal-close" id="pwm-detail-modal-close" title="${t('close')}"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="pwm-detail-meta" id="pwm-detail-meta"></div>
+                <div class="pwm-detail-body" id="pwm-detail-body"></div>
+                <div class="pwm-detail-actions" id="pwm-detail-actions"></div>
+            </div>
+        </div>
     `;
 
     bindModalEvents(backdrop);
@@ -2316,8 +2336,22 @@ function renderModal() {
 }
 
 function bindModalEvents(backdrop) {
-    // Close button
-    backdrop.querySelector('#pwm-close-btn').onclick = closeWardrobeModal;
+    // Close buttons (Header & Footer)
+    const headerClose = backdrop.querySelector('#pwm-close-btn');
+    if (headerClose) headerClose.onclick = closeWardrobeModal;
+
+    const footerClose = backdrop.querySelector('#pwm-footer-close-btn');
+    if (footerClose) footerClose.onclick = closeWardrobeModal;
+
+    // Item Detail Inspector modal events
+    const detailModal = backdrop.querySelector('#pwm-item-detail-modal');
+    const detailClose = backdrop.querySelector('#pwm-detail-modal-close');
+    if (detailClose && detailModal) {
+        detailClose.onclick = () => { detailModal.style.display = 'none'; };
+        detailModal.onclick = (e) => {
+            if (e.target === detailModal) detailModal.style.display = 'none';
+        };
+    }
     backdrop.onclick = (e) => {
         if (e.target === backdrop) closeWardrobeModal();
     };
@@ -2564,16 +2598,41 @@ function renderItemsGrid() {
                         ${isSelected ? '<i class="fa-solid fa-circle-check pwm-check-icon"></i>' : ''}
                         <span>${escapeHtml(displayName)}</span>
                     </span>
-                    <span class="pwm-item-badge ${badgeClass}">${escapeHtml(badgeLabel)}</span>
+                    <div class="pwm-item-header-actions">
+                        <button type="button" class="pwm-item-info-btn" data-id="${escapeHtml(item.id)}" title="${isThai ? 'อ่านรายละเอียดทั้งหมด (ตัวหนังสือใหญ่)' : 'Read full details (Large text)'}">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </button>
+                        <span class="pwm-item-badge ${badgeClass}">${escapeHtml(badgeLabel)}</span>
+                    </div>
                 </div>
                 ${subName ? `<div class="pwm-item-subname">${escapeHtml(subName)}</div>` : ''}
-                <div class="pwm-item-desc">${escapeHtml(displayDesc)}</div>
+                <div class="pwm-item-desc ${isSelected ? 'pwm-desc-expanded' : ''}">${escapeHtml(displayDesc)}</div>
+                ${isSelected ? `
+                    <div class="pwm-card-actions">
+                        <button type="button" class="pwm-btn-read-more" data-id="${escapeHtml(item.id)}">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i> ${isThai ? 'เปิดอ่านตัวหนังสือใหญ่ฉบับเต็ม' : 'Read Full Details (Large Text)'}
+                        </button>
+                    </div>
+                ` : ''}
             </div>
         `;
     }).join('');
 
     container.querySelectorAll('.pwm-item-card').forEach(card => {
-        card.onclick = () => toggleItemSelection(card.dataset.id);
+        card.onclick = (e) => {
+            if (e.target.closest('.pwm-item-info-btn') || e.target.closest('.pwm-btn-read-more')) return;
+            toggleItemSelection(card.dataset.id);
+        };
+    });
+
+    container.querySelectorAll('.pwm-item-info-btn, .pwm-btn-read-more').forEach(btn => {
+        btn.onclick = (e) => {
+            e.stopPropagation();
+            const itemId = btn.dataset.id;
+            const all = getAllOutfitsList();
+            const it = all.find(x => x.id === itemId);
+            if (it) openItemDetailModal(it);
+        };
     });
 }
 
@@ -2588,6 +2647,104 @@ function checkIsItemSelected(item) {
         return state.selectedModifiers.has(name);
     }
     return state.selectedMain === name;
+}
+
+
+/**
+ * Outfit Detail Inspector Modal (Large Readable Bubble)
+ */
+function openItemDetailModal(item) {
+    const modal = document.getElementById('pwm-item-detail-modal');
+    if (!modal || !item) return;
+
+    const isThai = state.currentLang === 'th';
+    const displayName = (isThai && item.th_name) ? item.th_name : item.name;
+    const subName = (isThai && item.th_name && item.th_name !== item.name) ? item.name : '';
+    const displayDesc = (isThai && item.th_desc) ? item.th_desc : item.desc;
+    const isSelected = checkIsItemSelected(item);
+
+    const titleEl = document.getElementById('pwm-detail-title');
+    const metaEl = document.getElementById('pwm-detail-meta');
+    const bodyEl = document.getElementById('pwm-detail-body');
+    const actionsEl = document.getElementById('pwm-detail-actions');
+
+    if (titleEl) {
+        titleEl.innerHTML = `<i class="fa-solid fa-shirt"></i> <span>${escapeHtml(displayName)}</span>`;
+    }
+
+    if (metaEl) {
+        metaEl.innerHTML = `
+            ${subName ? `<span class="pwm-detail-tag"><i class="fa-solid fa-language"></i> ${escapeHtml(subName)}</span>` : ''}
+            <span class="pwm-detail-tag"><i class="fa-solid fa-layer-group"></i> ${escapeHtml(item.category)}</span>
+            <span class="pwm-detail-tag pwm-detail-source"><i class="fa-solid fa-bookmark"></i> ${escapeHtml(item.source === 'imported' ? (item.book || 'Custom') : 'Default')}</span>
+            ${isSelected ? `<span class="pwm-detail-tag pwm-detail-wearing"><i class="fa-solid fa-circle-check"></i> ${isThai ? 'กำลังสวมใส่' : 'Equipped'}</span>` : ''}
+        `;
+    }
+
+    if (bodyEl) {
+        const paragraphs = displayDesc.split(/\n\n+/).filter(Boolean);
+        const formattedDesc = (paragraphs.length ? paragraphs : [displayDesc]).map(p => {
+            const cleanP = escapeHtml(p.trim()).replace(/\n/g, '<br>');
+            return `<p>${cleanP}</p>`;
+        }).join('');
+
+        const keysHtml = (item.keys && item.keys.length) ? `
+            <div class="pwm-detail-keywords">
+                <span class="pwm-detail-kw-label"><i class="fa-solid fa-tags"></i> ${isThai ? 'คำสำคัญ' : 'Keywords'}:</span>
+                ${item.keys.map(k => `<span class="pwm-detail-kw-chip">${escapeHtml(k)}</span>`).join('')}
+            </div>
+        ` : '';
+
+        bodyEl.innerHTML = `
+            <div class="pwm-detail-text">
+                ${formattedDesc}
+            </div>
+            ${keysHtml}
+        `;
+    }
+
+    if (actionsEl) {
+        actionsEl.innerHTML = `
+            <button type="button" class="pwm-btn ${isSelected ? 'pwm-btn-secondary' : 'pwm-btn-save'}" id="pwm-detail-toggle-select-btn">
+                <i class="fa-solid ${isSelected ? 'fa-rotate-left' : 'fa-check'}"></i> 
+                ${isSelected ? (isThai ? 'ถอดชุดนี้ออก' : 'Deselect') : (isThai ? 'สวมใส่ชุดนี้' : 'Select This Attire')}
+            </button>
+            <button type="button" class="pwm-btn pwm-btn-primary" id="pwm-detail-apply-chat-btn">
+                <i class="fa-solid fa-paper-plane"></i> ${isThai ? 'ใส่ในแชท' : 'Apply to Chat'}
+            </button>
+            <button type="button" class="pwm-btn pwm-btn-secondary" id="pwm-detail-close-btn" style="flex: 0 0 65px;">
+                ${isThai ? 'ปิด' : 'Close'}
+            </button>
+        `;
+
+        const selectBtn = actionsEl.querySelector('#pwm-detail-toggle-select-btn');
+        if (selectBtn) {
+            selectBtn.onclick = () => {
+                toggleItemSelection(item.id);
+                modal.style.display = 'none';
+            };
+        }
+
+        const applyBtn = actionsEl.querySelector('#pwm-detail-apply-chat-btn');
+        if (applyBtn) {
+            applyBtn.onclick = () => {
+                if (!checkIsItemSelected(item)) {
+                    toggleItemSelection(item.id);
+                }
+                applyAttireToChatInput();
+                modal.style.display = 'none';
+            };
+        }
+
+        const closeBtn = actionsEl.querySelector('#pwm-detail-close-btn');
+        if (closeBtn) {
+            closeBtn.onclick = () => {
+                modal.style.display = 'none';
+            };
+        }
+    }
+
+    modal.style.display = 'flex';
 }
 
 function toggleItemSelection(itemId) {
